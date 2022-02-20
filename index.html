@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- STYLES IN CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="navbar">
+                <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
+                <li><a href="" class="navbar_links">HOME</a></li>
+                <li><a href="" class="navbar_links">BLOG</a></li>
+                <li><a href="" class="navbar_links">CATEGORIES</a></li>
+                <li><a href="" class="navbar_links">CONTACT</a></li></li>
+                <div class="btn-navbar-right">
+                    <img id="btnShoppingCart" src="img/shopping-cart.png" alt="button-Shopping-Cart">
+                    <span id="cartQuantity">0</span>
+                </div>
+            </ul>
+        </nav>    
+    </header>
+
+    <main>
+        <div id="products-container"></div>
+
+    </main>
+
+    <div class="modalBox">
+        <div class="modalShoppingCart">
+            <h3>Your Shopping Cart</h3>
+            <img id="btnCloseCart" src="img/closeButton.png" alt="closeButton">
+            <div id="cart-container">                
+            </div>
+            <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
+        </div>
+    </div>
+
+    <script src="/javascript/stock.js" type="module"></script>
+    <script src="/javascript/index.js" type="module"></script>
+    <script src="/javascript/show-products.js" type="module"></script>
+    <script src="/javascript/modal.js" type="module"></script>
+    <script src="/javascript/update-cart.js" type="module"></script>
+    <script src="/javascript/add-to-cart.js" type="module"></script>
+    
+</body>
+
+</html> 
