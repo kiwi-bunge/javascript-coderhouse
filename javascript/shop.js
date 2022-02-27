@@ -8,7 +8,7 @@ const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
 
-import { PRODUCTS } from "./stock.js"
+import { PRODUCTS } from "./products-stock.js"
 
 let shoppingCart = [];
 
@@ -123,7 +123,7 @@ function eliminateProduct(e) {
 
         shoppingCart = shoppingCart.filter(product => product.id !== productId);
         Toastify({
-            text: "🛒 Product Removed",
+            text: "❌ Product Removed",
             duration: 2000,
             stopOnFocus: true,
 
