@@ -2,11 +2,14 @@ const openCart = document.getElementById("btnShoppingCart");
 const closeCart = document.getElementById("btnCloseCart");
 const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
+const sendEmailPrompt = document.getElementById("emailConfirmButton");
+const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
 
 const cartContainer = document.getElementById("cart-container");
 const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
+
 
 import { PRODUCTS } from "./products-stock.js"
 
@@ -18,7 +21,7 @@ loadEventListeners();
 
 
 
-// Shopping Cart Modal
+// Event Listeners
 
 openCart.addEventListener("click", () => {
 
@@ -35,6 +38,44 @@ modalContainer.addEventListener('click', ()=>{
     carritoCerrar.click()
 });
 
+sendEmailPrompt.addEventListener("click", () => {
+
+    document.getElementById("emailBox").style.visibility = "hidden"
+    localStorage.setItem("firstUser", false);
+});
+
+closeEmailPrompt.addEventListener("click", () => {
+
+    document.getElementById("emailBox").style.visibility = "hidden"
+    localStorage.setItem("firstUser", false);
+});
+
+
+// Check if it is first time in the web if not get email prompt
+
+function checkFirstUser() {
+
+    if (localStorage["firstUser"]) {
+
+    } else {
+
+        getEmail();
+    }
+    
+};
+
+
+// Get Email Prompt
+
+function getEmail() {
+
+    setTimeout( () => {
+
+        document.getElementById("emailBox").style.visibility = "visible";
+    }, 5000);
+
+};
+ 
 
 //Load event listeners
 
@@ -51,11 +92,12 @@ function loadEventListeners() {
         shoppingCart = JSON.parse(localStorage.getItem("cart")) || [];
         cartHTML();
         updateCart(shoppingCart);
-        
+        checkFirstUser();
         
     });
 
     updateCart(shoppingCart);
+    
 };
 
 
@@ -87,7 +129,6 @@ function showProducts() {
         productsContainer.appendChild(div);
     });  
 };
-
 
 
 // Add products to cart
@@ -138,6 +179,7 @@ function eliminateProduct(e) {
     updateCart(shoppingCart);
 };
 
+
 // Cleaning HTML
 
 function cleanHTML() {
@@ -146,7 +188,6 @@ function cleanHTML() {
         cartContainer.removeChild(cartContainer.firstChild);
     };
 };
-
 
 
 //Update cart
@@ -159,7 +200,7 @@ function updateCart(shoppingCart) {
 }
 
 
-// Add to cart
+// Products in the shopping cart
 
 function productInCart(product) {
     
@@ -213,7 +254,7 @@ function cartHTML() {
                     <p>${name}</p>
                     <p>Price: $ ${price}</p>
                     <p id=quantity${id}>Quantity: ${quantity}</p>
-                    <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> Delete </button>
+                    <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
         `;
 
         cartContainer.appendChild(div);
@@ -224,13 +265,11 @@ function cartHTML() {
 };
 
 
-//  Setting Local Storage
+//  Setting Local Storage for Shopping Cart
+
 function syncLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
 };
-
-
-
 
 
 
