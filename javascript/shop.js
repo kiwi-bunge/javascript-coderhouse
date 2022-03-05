@@ -11,14 +11,13 @@ const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
 
 
-import { PRODUCTS } from "./products-stock.js"
+// import { PRODUCTS } from "./products-stock.js"
 
 let shoppingCart = [];
 
 showProducts();
 
 loadEventListeners();
-
 
 
 // Event Listeners
@@ -97,30 +96,36 @@ function loadEventListeners() {
 // Show products in body
 
 function showProducts() {
-    
-    PRODUCTS.forEach (product => {
+
+    fetch("javascript/products-stock-data.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
         
-        const {id, img, name, price} = product;
+            data.forEach (product => {
+                
+                const {id, img, name, price} = product;
 
-        let div = document.createElement("div");
-        div.classList.add("product");
-        div.innerHTML = `
-                        <div class="product-card" data-id=${id}>
-                            <div class="card-image">
-                                <img src= ${img}>
-                            </div>
-                            <p class= "card-title">
-                                ${name}
-                            </p>
-                            <p class= "card-price">
-                                $<span>${price}</span>
-                            </p>
-                            <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                        </div>
-        `;
+                let div = document.createElement("div");
+                div.classList.add("product");
+                div.innerHTML = `
+                                <div class="product-card" data-id=${id}>
+                                    <div class="card-image">
+                                        <img src= ${img}>
+                                    </div>
+                                    <p class= "card-title">
+                                        ${name}
+                                    </p>
+                                    <p class= "card-price">
+                                        $<span>${price}</span>
+                                    </p>
+                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
+                                </div>
+                `;
 
-        productsContainer.appendChild(div);
-    });  
+                productsContainer.appendChild(div);
+            });
+        });  
 };
 
 

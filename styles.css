@@ -91,7 +91,7 @@ nav {
     width: 700px;
     height: 350px;
     opacity: 0.97;
-    border-radius: 2.5%;
+    border-radius: 15px;
 }
 
 .promptContainer {
@@ -282,7 +282,7 @@ nav {
     width: 900px;
     height: 550px;
     opacity: 0.97;
-    border-radius: 2.5%;
+    border-radius: 15px;
 }
 
 .modalShoppingCart h3 {
