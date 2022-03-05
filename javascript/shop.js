@@ -11,8 +11,6 @@ const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
 
 
-// import { PRODUCTS } from "./products-stock.js"
-
 let shoppingCart = [];
 
 showProducts();
