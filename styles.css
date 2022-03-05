@@ -91,6 +91,7 @@ nav {
     width: 700px;
     height: 350px;
     opacity: 0.97;
+    border-radius: 2.5%;
 }
 
 .promptContainer {
@@ -142,18 +143,48 @@ nav {
     right: 0px;
 }
 
+#shopBodyContainer {
+    display: flex;
+    margin: 50px 150px 50px 150px;
+}
+
+#sideBarMenu {
+    min-width: fit-content;
+    display: flex;
+    padding-left: 50px;
+}
+
+.categoriesMenu {
+    width: 100%;
+    margin: 50px 0px 0px 0px;
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.categoriesMenu h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 30px 0px;
+}
+
+.categoriesMenu li {
+    font-size: 15px;
+    margin: 20px 0px 20px 0px;
+}
+
 #products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 100px;
+    margin: 50px;
 }
 
 .product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 425px;
+    width: 275px;
 }
 
 .card-title {
@@ -164,6 +195,18 @@ nav {
 
 .card-content {
     text-align: left;
+}
+
+.card-image {
+    width: 200px;
+    height: 200px;
+}
+
+.card-image img {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .btnAddToCart {
@@ -239,6 +282,7 @@ nav {
     width: 900px;
     height: 550px;
     opacity: 0.97;
+    border-radius: 2.5%;
 }
 
 .modalShoppingCart h3 {

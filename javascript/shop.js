@@ -23,24 +23,17 @@ loadEventListeners();
 
 // Event Listeners
 
-openCart.addEventListener("click", () => {
+openCart.addEventListener("click", () => { modalContainer.classList.toggle("modal-visible") });
 
-    modalContainer.classList.toggle("modal-visible")
-});
-closeCart.addEventListener("click", () => {
+closeCart.addEventListener("click", () => { modalContainer.classList.toggle("modal-visible") });
 
-    modalContainer.classList.toggle("modal-visible")
-});
-modalCart.addEventListener('click',(e)=>{
-    e.stopPropagation()
-});
-modalContainer.addEventListener('click', ()=>{
-    carritoCerrar.click()
-});
+modalCart.addEventListener('click',(e)=>{ e.stopPropagation() });
+
+modalContainer.addEventListener('click', () => { carritoCerrar.click() });
 
 sendEmailPrompt.addEventListener("click", () => {
 
-    document.getElementById("emailBox").style.visibility = "hidden"
+    document.getElementById("emailBox").style.visibility = "hidden";
     localStorage.setItem("firstUser", false);
 });
 
@@ -53,7 +46,7 @@ closeEmailPrompt.addEventListener("click", () => {
 
 // Check if it is first time in the web if not get email prompt
 
-function checkFirstUser() {
+let checkFirstUser = () => {
 
     if (localStorage["firstUser"]) {
 
