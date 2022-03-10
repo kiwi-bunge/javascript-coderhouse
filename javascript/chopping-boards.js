@@ -5,17 +5,15 @@ const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
 
-
-
 const cartContainer = document.getElementById("cart-container");
-const productsContainer = document.getElementById("products-container");
+const showChoppingBoards = document.getElementById("chopping-boards");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
 
 
 let shoppingCart = [];
 
-showProducts();
+choppingBoardsSection();
 
 loadEventListeners();
 
@@ -73,7 +71,7 @@ function getEmail() {
 
 function loadEventListeners() {
 
-    productsContainer.addEventListener("click", addToCart);
+    showChoppingBoards.addEventListener("click", addToCart);
     
     modalCart.addEventListener("click", eliminateProduct);
     
@@ -95,50 +93,17 @@ function loadEventListeners() {
 
 // Show products in body
 
-function showProducts() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        
-            data.forEach (product => {
-                
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("product");
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-
-                productsContainer.appendChild(div);
-            });
-        });  
-};
-
-function knivesCategorySection() {
+function choppingBoardsSection() {
 
     fetch("javascript/products-stock-data.json")
         .then(response => response.json())
         .then(data => {
 
-            const myknives = data.filter(function(products) {
-                return products.category === "knives" 
+            const myChoppingBoards = data.filter(function(products) {
+                return products.category === "chopping-boards" 
             });
             
-            myknives.forEach (product => {
+            myChoppingBoards.forEach (product => {
                 
                 const {id, img, name, price} = product;
 
@@ -159,7 +124,7 @@ function knivesCategorySection() {
                                 </div>
                 `;
 
-                showKnives.appendChild(div);
+                showChoppingBoards.appendChild(div);
         });
     });
 };
