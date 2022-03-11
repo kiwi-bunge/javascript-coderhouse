@@ -1,6 +1,6 @@
 [
     
-    {"id": 1, "name": "Cinnamon Kitchen Cutting Board", "category": "chopping-boards", "description": "Medium 30 x 21.5cm - Black", "price": 23.95, "img": "img/products-images/choppingBoards/cinnamon-kitchen-cutting-board-medium-30x21.5cm-black.png", "quantity": 1},
+    {"id": 1, "name": "Cinnamon Kitchen Cutting Board", "category": "chopping-boards", "description": "recommended Medium 30 x 21.5cm - Black", "price": 23.95, "img": "img/products-images/choppingBoards/cinnamon-kitchen-cutting-board-medium-30x21.5cm-black.png", "quantity": 1, "recommended": "true"},
 
     {"id": 2, "name": "Dreamfarm Fledge", "category": "chopping-boards", "description": "Bamboo 3 pieces set", "price": 79.95, "img": "img/products-images/choppingBoards/dreamfarm-fledge-bamboo-3pc-set.png", "quantity": 1},
 
@@ -22,7 +22,7 @@
 
 
 
-    {"id": 10, "name": "Progressive ProKeeper Baker's Storage", "category": "food-containers", "description": "Set of 6", "price": 119.95, "img": "img/products-images/foodContainers/progressive-proKeeper-bakers-storage-set-of-6.png", "quantity": 1},
+    {"id": 10, "name": "Progressive ProKeeper Baker's Storage", "category": "food-containers", "description": "Set of 6", "price": 119.95, "img": "img/products-images/foodContainers/progressive-proKeeper-bakers-storage-set-of-6.png", "quantity": 1, "recommended": "true"},
 
     {"id": 11, "name": "Ecology Pantry Round Biscuit Barrel", "category": "food-containers", "description": "3L", "price": 29.95, "img": "img/products-images/foodContainers/ecology-pantry-round-biscuit-barrel-3L.png", "quantity": 1},
 
@@ -45,7 +45,7 @@
 
 
 
-    {"id": 20, "name": "Dreamfarm Set", "category": "bbq-tools", "description": "Set of BBQ grill tools", "price": 120.95, "img": "img/products-images/bbqTools/dreamfarm-set-of-bbq-grill-tools.png", "quantity": 1},
+    {"id": 20, "name": "Dreamfarm Set", "category": "bbq-tools", "description": "Set of BBQ grill tools", "price": 120.95, "img": "img/products-images/bbqTools/dreamfarm-set-of-bbq-grill-tools.png", "quantity": 1, "recommended": "true"},
 
     {"id": 21, "name": "Tramontina Churrasco", "category": "bbq-tools", "description": "2 piece carving set", "price": 39.95, "img": "img/products-images/bbqTools/tramontina-churrasco-2pc-carving-set.png", "quantity": 1},
 
@@ -70,7 +70,7 @@
 
     {"id": 30, "name": "Silicon Moulds", "category": "utensils-gadgets", "description": "Heart shape red", "price": 5.50, "img": "img/products-images/utensilsGadgets/silicon-moulds.png", "quantity": 1},
 
-    {"id": 31, "name": "Wild Wood Spagetti Measure", "category": "utensils-gadgets", "description": "Wooden beech 31cm", "price": 7.95, "img": "img/products-images/utensilsGadgets/spagetti-measure.png", "quantity": 1},
+    {"id": 31, "name": "Wild Wood Spagetti Measure", "category": "utensils-gadgets", "description": "Wooden beech 31cm", "price": 7.95, "img": "img/products-images/utensilsGadgets/spagetti-measure.png", "quantity": 1, "recommended": "true"},
 
 
 

@@ -4,9 +4,9 @@ const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
+const loadmore = document.querySelector("#loadMore");
 
-
-
+const recommendedProducts = document.getElementById("recommended");
 const cartContainer = document.getElementById("cart-container");
 const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
@@ -17,7 +17,10 @@ let shoppingCart = [];
 
 showProducts();
 
+showRecommended();
+
 loadEventListeners();
+
 
 
 // Event Listeners
@@ -74,6 +77,8 @@ function getEmail() {
 function loadEventListeners() {
 
     productsContainer.addEventListener("click", addToCart);
+
+    recommendedProducts.addEventListener("click", addToCart);
     
     modalCart.addEventListener("click", eliminateProduct);
     
@@ -92,6 +97,45 @@ function loadEventListeners() {
     
 };
 
+
+// Recommended products gallery
+
+function showRecommended() {
+
+    fetch("javascript/products-stock-data.json")
+        .then(response => response.json())
+        .then(data => {
+
+            data.forEach (product => {
+                 
+                let productRecommended = product.recommended
+
+                if (productRecommended == "true") {
+
+                const {id, img, name, price} = product;
+
+                let div = document.createElement("div");
+                div.classList.add("recommendedBox");
+                div.innerHTML = `
+                                <div class="product-card" data-id=${id}>
+                                    <div class="card-image">
+                                        <img src= ${img}>
+                                    </div>
+                                    <p class= "card-title">
+                                        ${name}
+                                    </p>
+                                    <p class= "card-price">
+                                        $<span>${price}</span>
+                                    </p>
+                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
+                                </div>
+                `;
+                
+                recommendedProducts.appendChild(div);
+            }
+            })
+        })
+}
 
 // Show products in body
 
@@ -126,42 +170,6 @@ function showProducts() {
                 productsContainer.appendChild(div);
             });
         });  
-};
-
-function knivesCategorySection() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-
-            const myknives = data.filter(function(products) {
-                return products.category === "knives" 
-            });
-            
-            myknives.forEach (product => {
-                
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("product");
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-
-                showKnives.appendChild(div);
-        });
-    });
 };
 
 

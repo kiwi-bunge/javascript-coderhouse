@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+main {
+    height: max-content;
+}
+
 /**********/
 /* Header */
 /**********/
@@ -103,12 +107,15 @@ nav {
 }
 
 .categoriesContainer {
-    width: 1200px;
-    height: 500px;
+    width: 1300px;
     display: block;
     text-align: center;
     margin: auto;
-    padding-top: 50px;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: white;
+    border: #83472C 2px;
+    box-shadow: 0px 0px 10px 2px #83472C;
 }
 
 .categoriesTitle {
@@ -116,6 +123,7 @@ nav {
     justify-content: center;
     margin-bottom: 50px;
     font-size: 30px;
+    color: #83472C;
 }
 
 .containerItems {
@@ -127,7 +135,27 @@ nav {
     width: auto;
     height: 250px;
     margin: 20px;
+    padding: 10px;
 }
+
+.recommendedContainer {
+    margin-top: 100px;
+}
+
+.recommendedProducts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 100px 25px 100px;
+}
+
+.recommendedTitle {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+
 
 /**********/
 /* Modals */
@@ -223,6 +251,15 @@ nav {
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.searchWrapper input {
+    margin: auto;
+    padding: 15px;
+    width: 100%;
 }
 
 #shopBodyContainer {
@@ -253,6 +290,20 @@ nav {
 .categoriesMenu li {
     font-size: 15px;
     margin: 20px 0px 20px 0px;
+    padding: 5px;
+}
+
+.categoriesMenu li a {
+    text-decoration: none;
+    color: #83472C;   
+}
+
+.categoriesMenu li a:hover {
+    text-decoration: overline;   
+}
+
+.categoriesMenu li a:visited {
+    color: #83472C
 }
 
 #products-container {
@@ -260,6 +311,10 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 50px;
+}
+
+#loadMore {
+    display: block;
 }
 
 #knivesCategory {
@@ -323,12 +378,14 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 275px;
+    margin: 30px;
 }
 
 .card-title {
-    width: 400px;
-    overflow-wrap: break-word;
+    width: auto;
+    height: 50px;
     text-align: center;
+    padding-top: 25px;
 }
 
 .card-content {
@@ -347,9 +404,14 @@ nav {
     max-height: 100%;
 }
 
+.card-price {
+    padding: 15px;
+}
+
 .btnAddToCart {
   width: 120px;
-  right: 10px;
+  position: relative;
+  
 }
 
 /*****************/
@@ -438,6 +500,11 @@ nav {
     position: absolute;
     bottom: 0;
     padding-bottom: 25px;
+}
+
+.footerContainer {
+    border: #83472C 1 solid;
+    height: 500px;
 }
 
 
