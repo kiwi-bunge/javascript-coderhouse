@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    
 </head>
 
 <body>
@@ -65,18 +64,20 @@
             <div id="sideBarMenu">
                 <ul class="categoriesMenu">
                     <h4>Categories</h4>
-                    <li><a href="shop.html">All Products</a></li>
-                    <li><a href="chopping-boards.html">Chopping Boards</a></li>
-                    <li><a href="food-containers.html">Food Containers</a></li>
-                    <li><a href="bbq-tools.html">BBQ Tools</a></li>
-                    <li><a href="utensils-gadgets.html">Utensils & Gadgets</a></li>
-                    <li><a href="oven-gloves.html">Oven Gloves</a></li>
-                    <li><a href="pasta-machines.html">Pasta Machines</a></li>
-                    <li><a href="spice-mills.html">Spice Mills</a></li>
-                    <li><a href="knives.html">Knives</a></li>
+                    <button class="categoriesButtons" onclick="filterProducts('all')">All</button>
+                    <button class="categoriesButtons" onclick="filterProducts('chopping-boards')">Chopping Boards</button>
+                    <button class="categoriesButtons" onclick="filterProducts('food-containers')">Food Containers</button>
+                    <button class="categoriesButtons" onclick="filterProducts('bbq-tools')">BBQ Tools</button>
+                    <button class="categoriesButtons" onclick="filterProducts('oven-gloves')">Oven Gloves</button>
+                    <button class="categoriesButtons" onclick="filterProducts('pasta-machines')">Pasta Machines</button>
+                    <button class="categoriesButtons" onclick="filterProducts('utensils-gadgets')">Utensils & Gadgets</button>
+                    <button class="categoriesButtons" onclick="filterProducts('spice-mills')">Spice Mills</button>
+                    <button class="categoriesButtons" onclick="filterProducts('knives')">Knives</button>
                 </ul>
             </div>
-            <div id="products-container"></div>
+
+            <div class="products-container" id="products-container"></div>
+
         </div>
 
         <div class="recommendedContainer">
@@ -84,6 +85,38 @@
             <div class="recommendedProducts" id="recommended"></div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="footerContainer">
+            <div class="footerContact">
+                <div class="footerFormHeader">
+                    <h4>Stay Connected</h4>
+                    <p>Be notified first of best deals & sales!</p>
+                </div>
+                <form action="" method="get">
+                    <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
+                    <input type="email" placeholder="Your Email" class="formInput">
+                    <button type="submit" name="submit" title="Subscribe" class="footerContactButton">Subscribe</button>
+                </form>
+            </div>
+            <div class="footerMenu">
+                <div class="footerCategoriesMenu">
+                    <a href="chopping-boards.html"><li>CHOPPING BOARDS</li></a>
+                    <a href="food-containers.html"><li>FOOD CONTAINERS</li></a>
+                    <a href="bbq-tools.html"><li>BBQ TOOLS</li></a>
+                    <a href="utensils-gadgets.html"><li>UTENSILS & GADGETS</li></a>
+                    <a href="oven-gloves.html"><li>OVEN GLOVES</li></a>
+                    <a href="pasta-machines.html"><li>PASTA MACHINES</li></a>
+                    <a href="spice-mills.html"><li>SPICE MILLS</li></a>
+                    <a href="knives.html"><li>KNIVES</li></a>
+                </div>
+            </div>
+            <div class="footerLogo">
+                <img src="img/MyKitchenBookRVB-small.png" alt="logo">
+            </div>
+        </div>
+
+    </footer>
 
     <div class="modalBox">
         <div class="modalShoppingCart">
@@ -98,8 +131,9 @@
     
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="javascript/shop.js" type="module"></script>
     
+    <script src="javascript/shop.js" type=""></script>
+
     
 </body>
 

@@ -4,18 +4,23 @@ const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
+const loadmore = document.querySelector("#loadMore");
 
+const recommendedProducts = document.getElementById("recommended");
 const cartContainer = document.getElementById("cart-container");
-const showKnives = document.getElementById("knivesCategory");
+const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
 
 
 let shoppingCart = [];
 
-knivesCategorySection();
+// showProducts();
+
+showRecommended();
 
 loadEventListeners();
+
 
 
 // Event Listeners
@@ -71,7 +76,9 @@ function getEmail() {
 
 function loadEventListeners() {
 
-    showKnives.addEventListener("click", addToCart);
+    // productsContainer.addEventListener("click", addToCart);
+
+    recommendedProducts.addEventListener("click", addToCart);
     
     modalCart.addEventListener("click", eliminateProduct);
     
@@ -91,24 +98,24 @@ function loadEventListeners() {
 };
 
 
-// Show products in body
+// Recommended products gallery
 
-function knivesCategorySection() {
+function showRecommended() {
 
     fetch("javascript/products-stock-data.json")
         .then(response => response.json())
         .then(data => {
 
-            const myknives = data.filter(function(products) {
-                return products.category === "knives" 
-            });
-            
-            myknives.forEach (product => {
-                
+            data.forEach (product => {
+                 
+                let productRecommended = product.recommended
+
+                if (productRecommended == "true") {
+
                 const {id, img, name, price} = product;
 
                 let div = document.createElement("div");
-                div.classList.add("product");
+                div.classList.add("recommendedBox");
                 div.innerHTML = `
                                 <div class="product-card" data-id=${id}>
                                     <div class="card-image">
@@ -123,11 +130,47 @@ function knivesCategorySection() {
                                     <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
                                 </div>
                 `;
+                
+                recommendedProducts.appendChild(div);
+            }
+            })
+        })
+}
 
-                showKnives.appendChild(div);
-        });
-    });
-};
+// Show products in body
+
+// function showProducts() {
+
+//     fetch("javascript/products-stock-data.json")
+//         .then(response => response.json())
+//         .then(data => {
+//             console.log(data)
+        
+//             data.forEach (product => {
+                
+//                 const {id, img, name, price} = product;
+
+//                 let div = document.createElement("div");
+//                 div.classList.add("product");
+//                 div.innerHTML = `
+//                                 <div class="product-card" data-id=${id}>
+//                                     <div class="card-image">
+//                                         <img src= ${img}>
+//                                     </div>
+//                                     <p class= "card-title">
+//                                         ${name}
+//                                     </p>
+//                                     <p class= "card-price">
+//                                         $<span>${price}</span>
+//                                     </p>
+//                                     <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
+//                                 </div>
+//                 `;
+
+//                 productsContainer.appendChild(div);
+//             });
+//         });  
+// };
 
 
 // Add products to cart

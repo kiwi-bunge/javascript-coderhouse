@@ -8,6 +8,7 @@ main {
     height: max-content;
 }
 
+
 /**********/
 /* Header */
 /**********/
@@ -49,9 +50,6 @@ nav {
     height: 80px;
 }
 
-.hidden-products {
-    visibility: hidden;
-}
 
 .btn-navbar-right {
     display: flex;
@@ -129,13 +127,37 @@ nav {
 .containerItems {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .itemInCategoriesContainer img {
     width: auto;
     height: 250px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
+}
+
+.itemInCategoriesContainer {
+
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.itemInCategoriesContainer:hover a {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.itemInCategoriesContainer a {
+    text-decoration: none;
+}
+
+.itemInCategoriesContainer:hover img {
+
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .recommendedContainer {
@@ -287,30 +309,28 @@ nav {
     margin: 0px 0px 30px 0px;
 }
 
-.categoriesMenu li {
-    font-size: 15px;
-    margin: 20px 0px 20px 0px;
-    padding: 5px;
-}
-
-.categoriesMenu li a {
-    text-decoration: none;
-    color: #83472C;   
-}
-
-.categoriesMenu li a:hover {
-    text-decoration: overline;   
-}
-
-.categoriesMenu li a:visited {
-    color: #83472C
-}
-
-#products-container {
+.categoriesButtons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    
+    border: 0.5px solid #83472C;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
     margin: 50px;
+    overflow: hidden;
+}
+
+.product {
+    height: fit-content;
+}
+
+.more-products {
+    height: auto;
 }
 
 #loadMore {
@@ -321,56 +341,48 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #food-containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #chopping-boards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #bbq-tools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #utensils-gadgets {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #oven-gloves {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #pasta-machines {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 #spice-mills {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 50px;
 }
 
 .product-card {
@@ -503,10 +515,81 @@ nav {
 }
 
 .footerContainer {
-    border: #83472C 1 solid;
-    height: 500px;
+    background-color: #83472C;
+    height: 400px;
+    display: flex;
+    justify-content: right;
+    padding-right: 150px;
+}
+
+.footerContact {
+    position: relative;
+    top: 25%;
+    right: 450px;
+    height: max-content;
+
+}
+
+.footerContact form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerFormHeader {
+    margin-bottom: 20px;
+    color: #f5e4bb;
+}
+
+.footerFormHeader h4 {
+    margin-bottom: 10px;
+}
+
+.formInput {
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.footerContactButton {
+    width: fit-content;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f5e4bb;
+    color:#83472C;
+    border: #f5e4bb;
+}
+
+.footerContactButton:hover {
+    transition: backg;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 85px;
+    padding-right: 150px;
+}
+
+.footerLogo {
+    position: relative;
+    margin-top: 100px;
+
+    height: fit-content;
+    
+}
+
+.footerCategoriesMenu li {
+    padding: 5px;
+    color: #f5e4bb;
+}
+
+.footerCategoriesMenu a {
+    text-decoration: none;
 }
 
 
+.hidden {
+    display: none;
+}
 
 

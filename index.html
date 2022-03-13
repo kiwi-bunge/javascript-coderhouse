@@ -56,36 +56,36 @@
             </div>
             <div class="containerItems">
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/choppingBoards/villeroy-boch-artesano-original-chopping-and-serving-board.png" alt="Chopping Board">
-                    <h6>CHOPPING BOARDS</h6>
+                    <a href="chopping-boards.html"><img src="img/products-images/choppingBoards/villeroy-boch-artesano-original-chopping-and-serving-board.png" alt="Chopping Board"></a>
+                    <a href="chopping-boards.html"><h6>CHOPPING BOARDS</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/foodContainers/pyrex-storage-12-piece-set-with-navy-lids.png" alt="Food Container">
-                    <h6>FOOD CONATINERS</h6>
+                    <a href="food-containers.html"><img src="img/products-images/foodContainers/pyrex-storage-12-piece-set-with-navy-lids.png" alt="Food Container"></a>
+                    <a href="food-containers.html"><h6>FOOD CONATINERS</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/bbqTools/davis-waddell-bbq-tool-set-with-aluminium-case-set-of-18.png" alt="BBQ Tool Set">
-                    <h6>BBQ TOOLS</h6>
+                    <a href="bbq-tools.html"><img src="img/products-images/bbqTools/davis-waddell-bbq-tool-set-with-aluminium-case-set-of-18.png" alt="BBQ Tool Set"></a>
+                    <a href="bbq-tools.html"><h6>BBQ TOOLS</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/utensilsGadgets/salad-spinner.png" alt="">
-                    <h6>UTENSILS & GADGETS</h6>
+                    <a href="utensils-gadgets.html"><img src="img/products-images/utensilsGadgets/salad-spinner.png" alt=""></a>
+                    <a href="utensils-gadgets.html"><h6>UTENSILS & GADGETS</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/ovenGloves/avanti-silicone-double-oven-glove.png" alt="">
-                    <h6>OVEN GLOVES</h6>
+                    <a href="oven-gloves.html"><img src="img/products-images/ovenGloves/avanti-silicone-double-oven-glove.png" alt=""></a>
+                    <a href="oven-gloves.html"><h6>OVEN GLOVES</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/pastaMachines/d-line-al-dente-pasta-machine-with-detachable-cutter-15cm.png" alt="">
-                    <h6>PASTA MACHINES</h6>
+                    <a href="pasta-machines.html"><img src="img/products-images/pastaMachines/d-line-al-dente-pasta-machine-with-detachable-cutter-15cm.png" alt=""></a>
+                    <a href="pasta-machines.html"><h6>PASTA MACHINES</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/spiceMills/cole-mason-regent-mills-concrete-18cm.png" alt="">
-                    <h6>SPICE MILLS</h6>
+                    <a href="spice-mills.html"><img src="img/products-images/spiceMills/cole-mason-regent-mills-concrete-18cm.png" alt=""></a>
+                    <a href="spice-mills.html"><h6>SPICE MILLS</h6></a>
                 </div>
                 <div class="itemInCategoriesContainer">
-                    <img src="img/products-images/knives/global-takashi-knife-block-8-piece-set.png" alt="">
-                    <h6>KNIVES</h6>
+                    <a href="knives.html"><img src="img/products-images/knives/global-takashi-knife-block-8-piece-set.png" alt=""></a>
+                    <a href="knives.html"><h6>KNIVES</h6></a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
             <h4 class="recommendedTitle">RECOMMENDED PRODUCTS</h4>
             <div class="recommendedProducts" id="recommended"></div>
         </div>
-
+        <!-- <div id="products-container" hidden></div> -->
         <div id="emailBox" class="emailModalBox">
             <div class="email-list-prompt">
                 <div class="promptContainer">
@@ -117,8 +117,32 @@
 
     <footer class="footer">
         <div class="footerContainer">
-            <p>a</p>
-
+            <div class="footerContact">
+                <div class="footerFormHeader">
+                    <h4>Stay Connected</h4>
+                    <p>Be notified first of best deals & sales!</p>
+                </div>
+                <form action="" method="get">
+                    <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
+                    <input type="email" placeholder="Your Email" class="formInput">
+                    <button type="submit" name="submit" title="Subscribe" class="footerContactButton">Subscribe</button>
+                </form>
+            </div>
+            <div class="footerMenu">
+                <div class="footerCategoriesMenu">
+                    <a href="chopping-boards.html"><li>CHOPPING BOARDS</li></a>
+                    <a href="food-containers.html"><li>FOOD CONTAINERS</li></a>
+                    <a href="bbq-tools.html"><li>BBQ TOOLS</li></a>
+                    <a href="utensils-gadgets.html"><li>UTENSILS & GADGETS</li></a>
+                    <a href="oven-gloves.html"><li>OVEN GLOVES</li></a>
+                    <a href="pasta-machines.html"><li>PASTA MACHINES</li></a>
+                    <a href="spice-mills.html"><li>SPICE MILLS</li></a>
+                    <a href="knives.html"><li>KNIVES</li></a>
+                </div>
+            </div>
+            <div class="footerLogo">
+                <img src="img/MyKitchenBookRVB-small.png" alt="logo">
+            </div>
         </div>
 
     </footer>
@@ -137,7 +161,7 @@
     
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="javascript/shop.js" type="module"></script>
+    <script src="javascript/index.js" type="module"></script>
     
     
 </body>

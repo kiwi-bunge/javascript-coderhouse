@@ -4,7 +4,7 @@ const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
-const loadmore = document.querySelector("#loadMore");
+
 
 const recommendedProducts = document.getElementById("recommended");
 const cartContainer = document.getElementById("cart-container");
@@ -20,7 +20,6 @@ showProducts();
 showRecommended();
 
 loadEventListeners();
-
 
 
 // Event Listeners
@@ -44,6 +43,8 @@ closeEmailPrompt.addEventListener("click", () => {
     document.getElementById("emailBox").style.visibility = "hidden"
     localStorage.setItem("firstUser", false);
 });
+
+
 
 
 // Check if it is first time in the web if not get email prompt
@@ -89,14 +90,76 @@ function loadEventListeners() {
         shoppingCart = JSON.parse(localStorage.getItem("cart")) || [];
         cartHTML();
         updateCart(shoppingCart);
-        checkFirstUser();
-        
+        checkFirstUser();         
     });
 
     updateCart(shoppingCart);
+
     
 };
 
+
+// Filter products by category
+
+function filterProducts(value) {
+
+    
+    let elements = document.querySelectorAll(".product");
+
+    elements.forEach((element) => {
+
+        if(value == "all") {
+
+            element.classList.remove("hidden");
+
+        } else {
+
+            if(element.classList.contains(value)) {
+
+                element.classList.remove("hidden");
+            } else {
+
+                element.classList.add("hidden")
+            };
+        };
+    });
+};
+
+
+// Show products in body
+
+function showProducts() {
+
+    fetch("javascript/products-stock-data.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        
+            data.forEach (product => {
+                
+                const {id, img, name, price} = product;
+
+                let div = document.createElement("div");
+                div.classList.add("product", product.category);
+                div.innerHTML = `
+                                <div class="product-card" data-id=${id}>
+                                    <div class="card-image">
+                                        <img src= ${img}>
+                                    </div>
+                                    <p class= "card-title">
+                                        ${name}
+                                    </p>
+                                    <p class= "card-price">
+                                        $<span>${price}</span>
+                                    </p>
+                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
+                                </div>
+                `;
+
+                productsContainer.appendChild(div);
+            });
+        });  
+};
 
 // Recommended products gallery
 
@@ -132,46 +195,10 @@ function showRecommended() {
                 `;
                 
                 recommendedProducts.appendChild(div);
-            }
-            })
-        })
-}
-
-// Show products in body
-
-function showProducts() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        
-            data.forEach (product => {
-                
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("product");
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-
-                productsContainer.appendChild(div);
-            });
-        });  
+            };
+        });
+    });
 };
-
 
 // Add products to cart
 
