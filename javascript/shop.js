@@ -315,15 +315,19 @@ function cartHTML() {
 
     shoppingCart.forEach (product => {
 
-        const {name, price, quantity, id} = product;
+        const {img, name, price, quantity, id} = product;
         const div = document.createElement("div");
 
         div.className = "productInCart";
         div.innerHTML = `
-                    <p>${name}</p>
-                    <p>Price: $ ${price}</p>
-                    <p id=quantity${id}>Quantity: ${quantity}</p>
-                    <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                        <div class="productCartContainer" data-id="${id}">
+                            <p>${name}</p>
+                            <p>Price: <b>$ ${price}</b></p>
+                            <p id=quantity${id}>Quantity: <b> ${quantity} </b></p>
+                        </div>
+                        <div>
+                            <button  class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                        </div>
         `;
 
         cartContainer.appendChild(div);
