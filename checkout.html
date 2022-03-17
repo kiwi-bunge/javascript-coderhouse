@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.css">
 
+    
 </head>
 
 <body>
@@ -39,9 +40,9 @@
 
                 <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
                 <li><a href="index.html" class="navbar_links">HOME</a></li>
-                <li><a href="shop.html" class="navbar_links">SHOP</a></li>
-                <li><a href="contact.html" class="navbar_links">CONTACT</a></li>
-                <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li></li>
+                <li><a href="shop.html" class="navbar_links">SHOP</a></li>                
+                <li><a href="contact.html" class="navbar_links">CONTACT</a></li></li>
+                <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li>
 
                 <div class="btn-navbar-right">
 
@@ -57,10 +58,10 @@
 
             <p>FREE SHIPPING ORDERS OVER $100*</p>
             <p>FAST DELIVERY</p>
-            <p>90 DAY RETURNS</p>  
+            <p>90 DAY RETURNS</p>
 
         </div>    
-
+        
     </header>
 
     <!------------------>
@@ -69,46 +70,18 @@
 
     <main>
 
-        <!------------------------>
-        <!--CATEGORIES SIDE MENU-->
-        <!------------------------>
-        
-        <div id="shopBodyContainer">
+        <div class="bodyCheckoutContainer">
 
-            <div id="sideBarMenu">
+            <h3>Your Shopping Cart</h3>
 
-                <ul class="categoriesMenu">
-                    <h4>Categories</h4>
-                    <button class="categoriesButtons" onclick="filterProducts('all')">All</button>
-                    <button class="categoriesButtons" onclick="filterProducts('chopping-boards')">Chopping Boards</button>
-                    <button class="categoriesButtons" onclick="filterProducts('food-containers')">Food Containers</button>
-                    <button class="categoriesButtons" onclick="filterProducts('bbq-tools')">BBQ Tools</button>
-                    <button class="categoriesButtons" onclick="filterProducts('oven-gloves')">Oven Gloves</button>
-                    <button class="categoriesButtons" onclick="filterProducts('pasta-machines')">Pasta Machines</button>
-                    <button class="categoriesButtons" onclick="filterProducts('utensils-gadgets')">Utensils & Gadgets</button>
-                    <button class="categoriesButtons" onclick="filterProducts('spice-mills')">Spice Mills</button>
-                    <button class="categoriesButtons" onclick="filterProducts('knives')">Knives</button>
-                </ul>
+            <div class="checkout-container" id="checkout-container"></div>
+
+            <div class="checkoutBox">
+
+                <p class="totalShoppingCart">Total: $<span id="totalCostCheckout">0</span></p>
+                <a href="thank-you.html" rel="noopener noreferrer"><button id="confirmCheckout"> Confirm Checkout </button></a>
 
             </div>
-
-            <!---------------------->
-            <!--PRODUCTS CONTAINER-->
-            <!---------------------->
-
-            <div class="products-container" id="products-container"></div>
-
-        </div>
-
-        <!------------------------>
-        <!--RECOMMENDED PRODUCTS-->
-        <!------------------------>
-
-        <div class="recommendedContainer">
-
-            <h4 class="recommendedTitle">RECOMMENDED PRODUCTS</h4>
-
-            <div class="recommendedProducts" id="recommended"></div>
 
         </div>
 
@@ -135,19 +108,19 @@
 
                 </div>
 
-            </div>  
+            </div> 
 
         </div>
 
         <div class="modalBox">
 
             <div class="modalShoppingCart">
+
                 <h3>Shopping Cart</h3>
-    
                 <button id="btnCloseCart"> X </button>
-    
+
                 <div id="cart-container"></div>
-    
+
                 <div class="checkOutCart">
 
                     <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
@@ -158,7 +131,7 @@
             </div>
 
         </div>
-
+        
     </main>
 
     <!--------------------------------------------->
@@ -181,7 +154,7 @@
                 <form action="" method="get">
                     <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
                     <input type="email" placeholder="Your Email" class="formInput">
-                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" onclick="subscribeContact()">Subscribe</button>
+                    <button type="submit" name="submit" title="Subscribe" class="footerContactButton">Subscribe</button>
                 </form>
 
             </div>
@@ -200,9 +173,9 @@
                     <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="instagram"></a>
                     <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="img/pinterest.png" alt="pinterest"></a>
 
-                </div>  
+                </div>
 
-            </div>  
+            </div> 
 
         </div>
 
@@ -211,11 +184,10 @@
     <!-------------->
     <!--JAVASCRIPT-->
     <!-------------->
- 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
     <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="javascript/shop.js" type=""></script>
-
+    <script src="javascript/checkout.js" type=""></script>
     
 </body>
 

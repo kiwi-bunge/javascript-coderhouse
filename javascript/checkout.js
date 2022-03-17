@@ -5,20 +5,19 @@ const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
 
-const recommendedProducts = document.getElementById("recommended");
+const checkoutBox = document.getElementsByClassName("bodyCheckoutContainer")[0];
+const checkoutContainer = document.getElementById("checkout-container");
 const cartContainer = document.getElementById("cart-container");
 const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
-
+const totalCostCheckout = document.getElementById("totalCostCheckout");
+const checkoutConfirmation = document.getElementById("confirmCheckout")
 
 let shoppingCart = [];
 
-showProducts();
-
-showRecommended();
-
 loadEventListeners();
+
 
 
 // Event Listeners
@@ -28,6 +27,8 @@ openCart.addEventListener("click", () => { modalContainer.classList.toggle("moda
 closeCart.addEventListener("click", () => { modalContainer.classList.toggle("modal-visible") });
 
 modalCart.addEventListener('click',(e)=>{ e.stopPropagation() });
+
+checkoutBox.addEventListener('click',(e)=>{ e.stopPropagation() });
 
 modalContainer.addEventListener('click', () => { carritoCerrar.click() });
 
@@ -43,9 +44,7 @@ closeEmailPrompt.addEventListener("click", () => {
     localStorage.setItem("firstUser", false);
 });
 
-
-
-
+checkoutConfirmation.addEventListener("click", confirmPurchase);
 
 
 // Check if it is first time in the web if not get email prompt
@@ -78,128 +77,23 @@ function getEmail() {
 
 function loadEventListeners() {
 
-    productsContainer.addEventListener("click", addToCart);
-
-    recommendedProducts.addEventListener("click", addToCart);
-    
     modalCart.addEventListener("click", eliminateProduct);
+
+    checkoutBox.addEventListener("click", eliminateProduct);
     
     updateCart(shoppingCart);
 
     document.addEventListener('DOMContentLoaded', () => {
 
         shoppingCart = JSON.parse(localStorage.getItem("cart")) || [];
-        cartHTML();
+        checkOut();
+        cartHTML();       
         updateCart(shoppingCart);
-        checkFirstUser();         
+        checkFirstUser();        
     });
 
     updateCart(shoppingCart);
-
     
-};
-
-
-// Filter products by category
-
-
-function filterProducts(value) {
-
-    
-    let elements = document.querySelectorAll(".product");
-
-    elements.forEach((element) => {
-
-        if(value == "all") {
-
-            element.classList.remove("hidden");
-
-        } else {
-
-            if(element.classList.contains(value)) {
-
-                element.classList.remove("hidden");
-            } else {
-
-                element.classList.add("hidden")
-            };
-        };
-    });
-};
-
-
-// Show products in body
-
-function showProducts() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        
-            data.forEach (product => {
-                
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("product", product.category);
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-
-                productsContainer.appendChild(div);
-            });
-        });  
-};
-
-// Recommended products gallery
-
-function showRecommended() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-
-            data.forEach (product => {
-                 
-                let productRecommended = product.recommended
-
-                if (productRecommended == "true") {
-
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("recommendedBox");
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-                
-                recommendedProducts.appendChild(div);
-            };
-        });
-    });
 };
 
 // Add products to cart
@@ -244,7 +138,25 @@ function eliminateProduct(e) {
                 color: "#f5e4bb"
             },
         }).showToast();
+        checkOut();
+        cartHTML();
 
+    } else if (e.target.classList.contains("eliminateProductFromCheckout")) {
+        // console.log(e.target.getAttribute("data-id"));
+        const productId = e.target.getAttribute("data-id");
+
+        shoppingCart = shoppingCart.filter(product => product.id !== productId);
+        Toastify({
+            text: "❌ Product Removed",
+            duration: 2000,
+            stopOnFocus: true,
+
+            style: {
+                background: "#83472C",
+                color: "#f5e4bb"
+            },
+        }).showToast();
+        checkOut();
         cartHTML();
     };
     updateCart(shoppingCart);
@@ -260,6 +172,14 @@ function cleanHTML() {
     };
 };
 
+function cleanCheckout() {
+
+    while(checkoutContainer.firstChild) {
+        checkoutContainer.removeChild(checkoutContainer.firstChild);
+    };
+
+}
+
 
 //Update cart
 
@@ -267,6 +187,8 @@ function updateCart(shoppingCart) {
 
     cartQuantity.innerHTML = shoppingCart.reduce((acc, el) => acc + el.quantity, 0);
     totalCost.innerHTML = shoppingCart.reduce((acc, el) => acc + (el.price * el.quantity), 0).toFixed(2);
+
+    totalCostCheckout.innerHTML = shoppingCart.reduce((acc, el) => acc + (el.price * el.quantity), 0).toFixed(2);
 
 }
 
@@ -304,8 +226,9 @@ function productInCart(product) {
 
         shoppingCart = [...shoppingCart, productInfo];
     };
-
+    checkOut();
     cartHTML();
+    
 };
 
 
@@ -328,7 +251,7 @@ function cartHTML() {
                             <p id=quantity${id}>Quantity: <b> ${quantity} </b></p>
                         </div>
                         <div>
-                            <button  class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                            <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
                         </div>
         `;
 
@@ -338,6 +261,46 @@ function cartHTML() {
 
     syncLocalStorage();
 };
+
+
+// Checkout Cart
+
+function checkOut() {
+
+    cleanCheckout();
+
+    shoppingCart.forEach (product => {
+
+        const {name, price, quantity, id} = product;
+        const div = document.createElement("div");
+
+        div.className = "productInCheckout";
+        div.innerHTML = `
+                            <div class="productCheckoutContainer" data-id="${id}">
+                                <p>${name}</p>
+                                <p>Price: <b>$ ${price}</b></p>
+                                <p id=quantity${id}>Quantity: <b> ${quantity} </b></p>
+                            </div>
+                            <div>
+                                <button class="eliminateProductFromCheckout" id="deleteButton${id}" data-id="${id}"> X </button>
+                            </div>
+        `;
+
+        checkoutContainer.appendChild(div);
+        updateCart(shoppingCart);
+    });
+
+    syncLocalStorage();
+};
+
+// Clears the key "cart" from localstorage to simulate that the purchase is complete
+
+function confirmPurchase() {
+
+    shoppingCart = [];
+    updateCart(shoppingCart);
+    localStorage.removeItem("cart");
+}
 
 
 //  Setting Local Storage for Shopping Cart
@@ -358,3 +321,4 @@ function subscribeContact() {
         location.reload();
       })
 };
+

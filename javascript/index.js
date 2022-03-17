@@ -4,7 +4,6 @@ const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
-const loadmore = document.querySelector("#loadMore");
 
 const recommendedProducts = document.getElementById("recommended");
 const cartContainer = document.getElementById("cart-container");
@@ -76,8 +75,6 @@ function getEmail() {
 
 function loadEventListeners() {
 
-    // productsContainer.addEventListener("click", addToCart);
-
     recommendedProducts.addEventListener("click", addToCart);
     
     modalCart.addEventListener("click", eliminateProduct);
@@ -89,14 +86,12 @@ function loadEventListeners() {
         shoppingCart = JSON.parse(localStorage.getItem("cart")) || [];
         cartHTML();
         updateCart(shoppingCart);
-        checkFirstUser();
-        
+        checkFirstUser();       
     });
 
     updateCart(shoppingCart);
     
 };
-
 
 // Recommended products gallery
 
@@ -293,10 +288,14 @@ function cartHTML() {
 
         div.className = "productInCart";
         div.innerHTML = `
-                    <p>${name}</p>
-                    <p>Price: $ ${price}</p>
-                    <p id=quantity${id}>Quantity: ${quantity}</p>
-                    <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                        <div class="productCartContainer" data-id="${id}">
+                            <p>${name}</p>
+                            <p>Price: <b>$ ${price}</b></p>
+                            <p id=quantity${id}>Quantity: <b> ${quantity} </b></p>
+                        </div>
+                        <div>
+                            <button  class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                        </div>
         `;
 
         cartContainer.appendChild(div);
@@ -314,4 +313,14 @@ function syncLocalStorage() {
 };
 
 
+// Pop up when subscribing in the footer form
 
+function subscribeContact() {
+
+    Swal.fire(
+        "Thanks for subscribing!"
+      ).then(() => {
+
+        location.reload();
+      })
+};

@@ -5,18 +5,16 @@ const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
 
-const recommendedProducts = document.getElementById("recommended");
+const checkoutBox = document.getElementsByClassName("bodyCheckoutContainer")[0];
+const checkoutContainer = document.getElementById("checkout-container");
 const cartContainer = document.getElementById("cart-container");
 const productsContainer = document.getElementById("products-container");
 const cartQuantity = document.getElementById("cartQuantity");
 const totalCost = document.getElementById("totalCost");
+const totalCostCheckout = document.getElementById("totalCostCheckout");
 
 
 let shoppingCart = [];
-
-showProducts();
-
-showRecommended();
 
 loadEventListeners();
 
@@ -42,10 +40,6 @@ closeEmailPrompt.addEventListener("click", () => {
     document.getElementById("emailBox").style.visibility = "hidden"
     localStorage.setItem("firstUser", false);
 });
-
-
-
-
 
 
 // Check if it is first time in the web if not get email prompt
@@ -78,128 +72,22 @@ function getEmail() {
 
 function loadEventListeners() {
 
-    productsContainer.addEventListener("click", addToCart);
-
-    recommendedProducts.addEventListener("click", addToCart);
-    
     modalCart.addEventListener("click", eliminateProduct);
+
+    // checkoutBox.addEventListener("click", eliminateProduct);
     
     updateCart(shoppingCart);
 
     document.addEventListener('DOMContentLoaded', () => {
 
         shoppingCart = JSON.parse(localStorage.getItem("cart")) || [];
-        cartHTML();
+        cartHTML();       
         updateCart(shoppingCart);
-        checkFirstUser();         
+        checkFirstUser();        
     });
 
     updateCart(shoppingCart);
-
     
-};
-
-
-// Filter products by category
-
-
-function filterProducts(value) {
-
-    
-    let elements = document.querySelectorAll(".product");
-
-    elements.forEach((element) => {
-
-        if(value == "all") {
-
-            element.classList.remove("hidden");
-
-        } else {
-
-            if(element.classList.contains(value)) {
-
-                element.classList.remove("hidden");
-            } else {
-
-                element.classList.add("hidden")
-            };
-        };
-    });
-};
-
-
-// Show products in body
-
-function showProducts() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-        
-            data.forEach (product => {
-                
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("product", product.category);
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-
-                productsContainer.appendChild(div);
-            });
-        });  
-};
-
-// Recommended products gallery
-
-function showRecommended() {
-
-    fetch("javascript/products-stock-data.json")
-        .then(response => response.json())
-        .then(data => {
-
-            data.forEach (product => {
-                 
-                let productRecommended = product.recommended
-
-                if (productRecommended == "true") {
-
-                const {id, img, name, price} = product;
-
-                let div = document.createElement("div");
-                div.classList.add("recommendedBox");
-                div.innerHTML = `
-                                <div class="product-card" data-id=${id}>
-                                    <div class="card-image">
-                                        <img src= ${img}>
-                                    </div>
-                                    <p class= "card-title">
-                                        ${name}
-                                    </p>
-                                    <p class= "card-price">
-                                        $<span>${price}</span>
-                                    </p>
-                                    <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-                                </div>
-                `;
-                
-                recommendedProducts.appendChild(div);
-            };
-        });
-    });
 };
 
 // Add products to cart
@@ -244,7 +132,23 @@ function eliminateProduct(e) {
                 color: "#f5e4bb"
             },
         }).showToast();
+        cartHTML();
 
+    } else if (e.target.classList.contains("eliminateProductFromCheckout")) {
+        // console.log(e.target.getAttribute("data-id"));
+        const productId = e.target.getAttribute("data-id");
+
+        shoppingCart = shoppingCart.filter(product => product.id !== productId);
+        Toastify({
+            text: "❌ Product Removed",
+            duration: 2000,
+            stopOnFocus: true,
+
+            style: {
+                background: "#83472C",
+                color: "#f5e4bb"
+            },
+        }).showToast();
         cartHTML();
     };
     updateCart(shoppingCart);
@@ -260,14 +164,12 @@ function cleanHTML() {
     };
 };
 
-
 //Update cart
 
 function updateCart(shoppingCart) {
 
     cartQuantity.innerHTML = shoppingCart.reduce((acc, el) => acc + el.quantity, 0);
     totalCost.innerHTML = shoppingCart.reduce((acc, el) => acc + (el.price * el.quantity), 0).toFixed(2);
-
 }
 
 
@@ -304,7 +206,6 @@ function productInCart(product) {
 
         shoppingCart = [...shoppingCart, productInfo];
     };
-
     cartHTML();
 };
 
@@ -328,7 +229,7 @@ function cartHTML() {
                             <p id=quantity${id}>Quantity: <b> ${quantity} </b></p>
                         </div>
                         <div>
-                            <button  class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
+                            <button class="eliminateProductFromCart" id="deleteButton${id}" data-id="${id}"> X </button>
                         </div>
         `;
 
@@ -339,6 +240,13 @@ function cartHTML() {
     syncLocalStorage();
 };
 
+function confirmPurchase() {
+
+    shoppingCart = [];
+    updateCart(shoppingCart);
+    syncLocalStorage();
+}
+
 
 //  Setting Local Storage for Shopping Cart
 
@@ -346,13 +254,25 @@ function syncLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
 };
 
-
 // Pop up when subscribing in the footer form
 
 function subscribeContact() {
 
     Swal.fire(
         "Thanks for subscribing!"
+      ).then(() => {
+
+        location.reload();
+      })
+};
+
+
+function submitContact() {
+
+    Swal.fire(
+        "Thanks for writing!",
+        "We will reply to you shortly."
+
       ).then(() => {
 
         location.reload();

@@ -14,156 +14,189 @@
     <title>Document</title>
 
     <!-- STYLES IN CSS -->
+    
     <link rel="stylesheet" href="styles.css">
+
+    <!-- TOASTIFY STYLES-->
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- SWEET ALERT STYLES -->
+
+    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.css">
 
     
 </head>
 
 <body>
 
+    <!------------------------------------------->
+    <!-- HEADER WITH NAV BAR AND PROMOTION BAR -->
+    <!------------------------------------------->
+
     <header>
         <nav>
             <ul class="navbar">
+
                 <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
                 <li><a href="index.html" class="navbar_links">HOME</a></li>
                 <li><a href="shop.html" class="navbar_links">SHOP</a></li>                
-                <li><a href="" class="navbar_links">CONTACT</a></li></li>
+                <li><a href="contact.html" class="navbar_links">CONTACT</a></li></li>
                 <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li>
+
                 <div class="btn-navbar-right">
+
                     <img id="btnShoppingCart" src="img/shopping-cart.png" alt="button-Shopping-Cart">
                     <span id="cartQuantity">0</span>
+
                 </div>
+
             </ul>
         </nav>
-        <div class="promotionBar">            
+
+        <div class="promotionBar">  
+
             <p>FREE SHIPPING ORDERS OVER $100*</p>
             <p>FAST DELIVERY</p>
-            <p>90 DAY RETURNS</p>            
+            <p>90 DAY RETURNS</p> 
+
         </div>    
+
     </header>
 
+    <!------------------>
+    <!--MAIN CONTAINER-->
+    <!------------------>
+
     <main>
+
+        <!--------------->
+        <!--HOME BANNER-->
+        <!--------------->
         
         <div id="mainBanner" class="bannerContainer">
+
             <img src="img/mainBanner.png" alt="choppingBoardsBanner">
             <a href="shop.html"><button class="shopNowButton">SHOP NOW ></button></a>
+
         </div>
 
-        <div class="categoriesContainer">
-            <div class="categoriesTitle">
-                <h4>MY KITCHEN SHOP IS YOUR KITCHEN SHOP</h4>
-            </div>
-            <div class="containerItems">
-                <div class="itemInCategoriesContainer">
-                    <a href="chopping-boards.html"><img src="img/products-images/choppingBoards/villeroy-boch-artesano-original-chopping-and-serving-board.png" alt="Chopping Board"></a>
-                    <a href="chopping-boards.html"><h6>CHOPPING BOARDS</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="food-containers.html"><img src="img/products-images/foodContainers/pyrex-storage-12-piece-set-with-navy-lids.png" alt="Food Container"></a>
-                    <a href="food-containers.html"><h6>FOOD CONATINERS</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="bbq-tools.html"><img src="img/products-images/bbqTools/davis-waddell-bbq-tool-set-with-aluminium-case-set-of-18.png" alt="BBQ Tool Set"></a>
-                    <a href="bbq-tools.html"><h6>BBQ TOOLS</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="utensils-gadgets.html"><img src="img/products-images/utensilsGadgets/salad-spinner.png" alt=""></a>
-                    <a href="utensils-gadgets.html"><h6>UTENSILS & GADGETS</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="oven-gloves.html"><img src="img/products-images/ovenGloves/avanti-silicone-double-oven-glove.png" alt=""></a>
-                    <a href="oven-gloves.html"><h6>OVEN GLOVES</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="pasta-machines.html"><img src="img/products-images/pastaMachines/d-line-al-dente-pasta-machine-with-detachable-cutter-15cm.png" alt=""></a>
-                    <a href="pasta-machines.html"><h6>PASTA MACHINES</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="spice-mills.html"><img src="img/products-images/spiceMills/cole-mason-regent-mills-concrete-18cm.png" alt=""></a>
-                    <a href="spice-mills.html"><h6>SPICE MILLS</h6></a>
-                </div>
-                <div class="itemInCategoriesContainer">
-                    <a href="knives.html"><img src="img/products-images/knives/global-takashi-knife-block-8-piece-set.png" alt=""></a>
-                    <a href="knives.html"><h6>KNIVES</h6></a>
-                </div>
-            </div>
-        </div>
+        <!------------------------>
+        <!--RECOMMENDED PRODUCTS-->
+        <!------------------------>
 
         <div class="recommendedContainer">
+
             <h4 class="recommendedTitle">RECOMMENDED PRODUCTS</h4>
+
             <div class="recommendedProducts" id="recommended"></div>
+
         </div>
-        <!-- <div id="products-container" hidden></div> -->
+
+        <!-------------------------------------->
+        <!--EMAIL BOX AND SHOPPING CART MODALS-->
+        <!-------------------------------------->
+
         <div id="emailBox" class="emailModalBox">
+
             <div class="email-list-prompt">
+
                 <div class="promptContainer">
+
                     <h1>Welcome to My Kitchen Shop!</h1>
                     <img id="btnCloseEmailPrompt" src="img/closeButton.png" alt="closeButton">
                     <h3>Get 10% off your first purchase when you sign up to our mailing list!</h3>
+
                     <div class="emailInput">
+
                         <input type="email" placeholder="john.doe@email.com" class="emailPlaceholder">
                         <input type="submit" id="emailConfirmButton" class="confirmEmailButton" value="Sign Up!">
+
                     </div>
+
                 </div>
-            </div>             
+
+            </div>   
+
         </div>
-        
 
+        <div class="modalBox">
 
-        <!-- <div id="products-container" class="hidden-products"></div> -->
+            <div class="modalShoppingCart">
+
+                <h3>Shopping Cart</h3>
+                <button id="btnCloseCart"> X </button>
+
+                <div id="cart-container"></div>
+
+                <div class="checkOutCart">
+
+                    <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
+                    <a href="checkout.html" rel="noopener noreferrer"><button id="proceedToCheckout"> Checkout </button></a>
+
+                </div>
+
+            </div>
+
+        </div>        
 
     </main>
 
+    <!--------------------------------------------->
+    <!--FOOTER WITH SUBSCRIPTION AND SOCIAL ICONS-->
+    <!--------------------------------------------->
+
     <footer class="footer">
+
         <div class="footerContainer">
+
             <div class="footerContact">
+
                 <div class="footerFormHeader">
+
                     <h4>Stay Connected</h4>
                     <p>Be notified first of best deals & sales!</p>
+
                 </div>
+
                 <form action="" method="get">
                     <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
                     <input type="email" placeholder="Your Email" class="formInput">
-                    <button type="submit" name="submit" title="Subscribe" class="footerContactButton">Subscribe</button>
+                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" onclick="subscribeContact()">Subscribe</button>
                 </form>
+
             </div>
+
             <div class="footerMenu">
-                <div class="footerCategoriesMenu">
-                    <a href="chopping-boards.html"><li>CHOPPING BOARDS</li></a>
-                    <a href="food-containers.html"><li>FOOD CONTAINERS</li></a>
-                    <a href="bbq-tools.html"><li>BBQ TOOLS</li></a>
-                    <a href="utensils-gadgets.html"><li>UTENSILS & GADGETS</li></a>
-                    <a href="oven-gloves.html"><li>OVEN GLOVES</li></a>
-                    <a href="pasta-machines.html"><li>PASTA MACHINES</li></a>
-                    <a href="spice-mills.html"><li>SPICE MILLS</li></a>
-                    <a href="knives.html"><li>KNIVES</li></a>
+
+                <div class="footerLogo">
+
+                    <img src="img/MyKitchenBookRVB-small.png" alt="logo">
+
                 </div>
-            </div>
-            <div class="footerLogo">
-                <img src="img/MyKitchenBookRVB-small.png" alt="logo">
-            </div>
+
+                <div class="footerSocialBar">
+
+                    <a href="https://www.facebook.com/My-Kitchen-Book-102759908776347/?ref=py_c" target="_blank" rel="noopener noreferrer"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="img/pinterest.png" alt="pinterest"></a>
+
+                </div>
+
+            </div> 
+
         </div>
 
     </footer>
 
-    <div class="modalBox">
-        <div class="modalShoppingCart">
-            <h3>Your Shopping Cart</h3>
-            <img id="btnCloseCart" src="img/closeButton.png" alt="closeButton">
-            <div id="cart-container">                
-            </div>
-            <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
-        </div>
-    </div>
-
-    
-    
+    <!-------------->
+    <!--JAVASCRIPT-->
+    <!-------------->    
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="javascript/index.js" type="module"></script>
-    
-    
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="javascript/index.js" type=""></script>
+        
 </body>
 
 </html> 
