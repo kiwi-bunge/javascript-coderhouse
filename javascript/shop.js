@@ -143,7 +143,7 @@ function filterProducts(value) {
 
 function showProducts() {
 
-    fetch("/javascript/products-stock-data.json")
+    fetch("javascript/products-stock-data.json")
         .then(response => response.json())
         .then(data => {
             console.log(data)
@@ -178,7 +178,7 @@ function showProducts() {
 
 function showRecommended() {
 
-    fetch("/javascript/products-stock-data.json")
+    fetch("javascript/products-stock-data.json")
         .then(response => response.json())
         .then(data => {
 
