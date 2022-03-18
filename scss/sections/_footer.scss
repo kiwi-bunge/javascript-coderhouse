@@ -1,0 +1,56 @@
+/**********/
+/* FOOTER */
+/**********/
+
+.footerContainer {
+    background-color: #83472C;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerFormHeader {
+    margin-bottom: 20px;
+    color: #f5e4bb;
+
+    h4 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;  
+    }
+}
+
+.formInput {
+    padding: 10px;
+}
+
+.footerContactButton {
+    padding: 12px;
+    background-color: #f5e4bb;
+    color:#83472C;
+    border: transparent;
+}
+
+.footerContactButton:hover {
+    background-color: #83472C;
+    color: #f5e4bb;
+    border: 2px solid #f5e4bb
+}
+
+.footerLogo img {
+    padding-bottom: 10px;
+}
+
+.footerSocialBar {
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 50px;
+        padding: 5px; 
+    }
+}

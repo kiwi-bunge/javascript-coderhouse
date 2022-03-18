@@ -1,0 +1,52 @@
+/********************/
+/*****STYLESHEET*****/
+/********************/
+
+// GENERAL //
+
+@import "general.scss";
+
+// NAVBAR //
+
+@import "sections/nav.scss";
+
+// MAIN BANNER //
+
+@import "sections/main-banner";
+
+/**************/
+/*****MAIN*****/
+/**************/
+
+// DESCRIPTION //
+
+@import "sections/recommended-products";
+
+
+// SHOP //
+
+@import "pages/shop";
+
+// CHECKOUT //
+
+@import "pages/checkout";
+
+// THANK YOU //
+
+@import "pages/thank-you";
+
+// CONTACT //
+
+@import "pages/contact.scss";
+
+// FOOTER //
+
+@import "sections/footer.scss";
+
+// MODALS //
+
+@import "modals.scss";
+
+// MEDIA QUERIES //
+
+@import "media-queries";

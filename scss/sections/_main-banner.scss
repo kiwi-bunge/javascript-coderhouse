@@ -1,0 +1,24 @@
+/***************/
+/* MAIN BANNER */
+
+.bannerContainer {
+    margin-right: 100px;
+    display: flex;
+    position: relative;
+
+    img {
+        height: 700px;
+    }
+
+    button {
+        position: absolute;
+        top: 520px;
+        left: 920px;
+        background-color: #f5e4bb;
+        color: #83472C;
+        border-radius: 7%;
+        padding: 15px;
+        border: 0px;
+        font-weight: bold;
+    }
+}

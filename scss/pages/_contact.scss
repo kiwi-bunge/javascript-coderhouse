@@ -1,0 +1,61 @@
+/***********/
+/* CONTACT */
+/***********/
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contactForm {
+    flex-direction: column;
+}
+
+.contactFormHeader {
+    margin-bottom: 50px;
+
+    h4 {
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+}
+
+.contactFormInput{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.formInputBigBox {
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 140px;
+}
+
+.formContactButton {
+    padding: 12px;
+    background-color: #f5e4bb;
+    color:#83472C;
+    border: transparent;
+    font-weight: bold;
+}
+
+.formContactButton:hover {
+    background-color: #83472C;
+    color: #f5e4bb;
+}
+
+.confirmButton {
+    background-color: #83472C;
+    color: #f5e4bb;
+}
