@@ -1,100 +1,69 @@
-/*****************/
-/* STYLES ON CSS */
-/*****************/
-
+/********************/
+/*****STYLESHEET*****/
+/********************/
 * {
-    margin: 0;
-    width: auto;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/**********/
-/* HEADER */
-/**********/
+  margin: 0;
+  width: auto;
+  font-family: 'Montserrat', sans-serif; }
 
 /**********/
 /* NAVBAR */
-
 nav {
-    margin: 20px 300px 50px 300px;
-}
+  margin: 20px 300px 50px 300px; }
 
 .navbar {
-    display: flex;
-    position: relative;
-    top: 10px;
-    padding: 0;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.navbar li a {
+  display: flex;
+  position: relative;
+  top: 10px;
+  padding: 0;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center; }
+  .navbar li a {
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
-    color: #83472C;
-}
+    color: #83472C; }
 
 .navbar li a:hover {
-    text-decoration: overline;  
-}
+  text-decoration: overline; }
 
 .navbar li a:visited {
-    color: #83472C
-}
+  color: #83472C; }
 
 .logo-navbar {
-    width: 80px;
-}
+  width: 80px; }
 
 .btn-navbar-right {
-    display: flex;
-    align-items: center;
-}
+  display: flex;
+  align-items: center; }
 
 #btnShoppingCart {
-    width: 40px;
-    margin: 10px 10px 10px 0px
-}
+  width: 40px;
+  margin: 10px 10px 10px 0px; }
 
 #cartQuantity {
-    font-size: 28px;
-}
+  font-size: 28px; }
 
 /*****************/
 /* PROMOTION BAR */
-
 .promotionBar {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f5e4bb;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px;
-}
-
-
-
-/**************/
-/* INDEX BODY */
-/**************/
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5e4bb;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px; }
 
 /***************/
 /* MAIN BANNER */
-
 .bannerContainer {
-    margin-right: 100px;
-    display: flex;
-    position: relative;
-}
-
-.bannerContainer img {
-    height: 700px;
-}
-
-.bannerContainer button {
+  margin-right: 100px;
+  display: flex;
+  position: relative; }
+  .bannerContainer img {
+    height: 700px; }
+  .bannerContainer button {
     position: absolute;
     top: 520px;
     left: 920px;
@@ -103,610 +72,491 @@ nav {
     border-radius: 7%;
     padding: 15px;
     border: 0px;
-    font-weight: bold;
-}
+    font-weight: bold; }
 
+/**************/
+/*****MAIN*****/
+/**************/
 /************************/
 /* RECOMMENDED PRODUCTS */
-
 .recommendedContainer {
-    margin-top: 100px;
-}
+  margin-top: 100px; }
 
 .recommendedTitle {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
+  display: flex;
+  justify-content: center;
+  font-size: 30px; }
 
 .recommendedProducts {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-
-
-/**********/
-/* MODALS */
-/**********/
-
-/**********************/
-/* EMAIL PROMPT MODAL */
-
-#emailBox {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 1;
-    transition: visibility 0s opacity 0.5s;
-    overflow-y: initial;
-}
-
-.email-list-prompt {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: absolute;
-    height: 350px;
-    border-radius: 15px;
-}
-
-.promptContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.promptContainer h1 {
-    margin-top: 45px;
-    font-size: 30px;
-    color: #83472C;
-}
-
-#btnCloseEmailPrompt {
-    width: 50px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding: 5px;
-}
-
-.promptContainer h3 {
-    text-align: center;
-    font-size: 20px;
-    padding: 40px 20px 40px 20px;
-    margin: 0;
-    color: #83472C;
-}
-
-.emailInput {
-    text-align: center; 
-}
-
-.emailPlaceholder {
-    width: 250px;
-    padding: 10px;
-}
-.confirmEmailButton{
-    background-color: #83472C;
-    color: #f5e4bb;
-    padding: 10px;
-    border: transparent;
-}
-
-.email-prompt-hidden {
-    visibility: hidden;
-    opacity: 0;
-}
-
-/***********************/
-/* SHOPPING CART MODAL */
-
-.modalBox {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s opacity 0.5s;
-    overflow-y: initial;
-}
-
-.modalShoppingCart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: white;
-    width: 80%;
-    height: 550px;
-}
-
-.modalShoppingCart h3 {
-    position: absolute;
-    top: 0;
-    padding-top: 25px;
-    font-size: 30px;
-    color: #83472C;
-}
-
-#btnCloseCart {
-    width: 30px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    margin: 20px;
-    background-color: white;
-    color: #83472C;
-    border: #83472C 2px solid;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#cart-container {
-    max-height: 350px;
-    overflow-y: scroll;
-    width: 80%;
-    padding-right: 80px;
-}
-
-#cart-container::-webkit-scrollbar {
-    background: white;
-    border-radius: 10px; 
-    border-color: #83472C;
-    width: 7px; 
-}
-
-#cart-container::-webkit-scrollbar-thumb {
-    background: #83472C;
-    border-radius: 10px; 
-}
-
-.productInCart {
-    display: flex;
-    align-items: center;
-}
-
-.productCartContainer {
-    display: flex;
-    margin: 10px 40px 10px 10px;
-    justify-content: right;
-    width: 100%;
-}
-
-.productCartContainer p {
-    padding: 0px 25px 10px 25px;
-    color: #83472C;
-    border-bottom: 2px solid #83472C;
-}
-
-.eliminateProductFromCart {
-    color: #83472C;
-    background-color: white;
-    margin: 20px;
-    border: transparent;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.checkOutCart {
-    width: 300px;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    align-items: center;
-    padding: 25px;
-    justify-content: space-between;
-}
-
-.totalShoppingCart {
-    color: #83472C;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.checkOutCart button {
-    padding: 10px;
-    background-color: #83472C;
-    color: #f5e4bb;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 10px;
-    border-color: transparent;
-}
-
+  display: flex;
+  justify-content: center;
+  margin: 50px; }
 
 /*************/
 /* SHOP BODY */
 /*************/
-
 #shopBodyContainer {
-    display: flex;
-    margin: 50px 150px 50px 150px;
-}
+  display: flex;
+  margin: 50px 150px 50px 150px; }
 
 /*******************/
 /* CATEGORIES MENU */
-
 #sideBarMenu {
-    padding-left: 50px;
-}
+  padding-left: 50px; }
 
 .categoriesMenu {
-    margin: 50px 0px 0px 0px;
-    padding: 0;
-    color: #83472C;
-}
-
-.categoriesMenu h4 {
+  margin: 50px 0px 0px 0px;
+  padding: 0;
+  color: #83472C; }
+  .categoriesMenu h4 {
     font-size: 30px;
     font-weight: bold;
-    margin: 0px 0px 30px 0px;
-}
+    margin: 0px 0px 30px 0px; }
 
 .categoriesButtons {
-    display: flex;
-    margin: 10px 0px 10px 0px;
-    background-color: #83472C;
-    color: #f5e4bb;
-    border: 1px solid #83472C;
-    padding: 5px;
-    border-radius: 5px;
-}
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  background-color: #83472C;
+  color: #f5e4bb;
+  border: 1px solid #83472C;
+  padding: 5px;
+  border-radius: 5px; }
 
 /********************/
 /* PRODUCTS IN SHOP */
-
 .products-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 5rem;
-    margin: 50px;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 5rem;
+  margin: 50px; }
 
 .product-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px; }
 
 .card-image {
-    width: 200px;
-}
-
-.card-image img {
+  width: 200px; }
+  .card-image img {
     display: block;
-    max-width: 100%;
-}
+    max-width: 100%; }
 
 .card-title {
-    height: 50px;
-    text-align: center;
-    padding-top: 25px;
-}
+  height: 50px;
+  text-align: center;
+  padding-top: 25px; }
 
 .card-price {
-    padding: 15px;
-}
+  padding: 15px; }
 
 .btnAddToCart {
   background-color: #83472C;
   color: #f5e4bb;
   border: 1px solid #83472C;
   padding: 5px;
-  border-radius: 5px;
-}
-
+  border-radius: 5px; }
 
 /*****************/
 /* CHECKOUT BODY */
 /*****************/
-
 .bodyCheckoutContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    align-items: center;
-}
-
-.bodyCheckoutContainer h3 {
-    padding-bottom: 30px;
-}
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
+  align-items: center; }
+  .bodyCheckoutContainer h3 {
+    padding-bottom: 30px; }
 
 .checkout-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .productInCheckout {
-    display: flex;
-    align-items: center;
-    margin: 0px 150px 0px 150px;
-    justify-content: space-around;
-}
+  display: flex;
+  align-items: center;
+  margin: 0px 150px 0px 150px;
+  justify-content: space-around; }
 
 .productCheckoutContainer {
-    display: flex;
-    margin: 10px;
-    justify-content: right;
-    width: 100%;
-}
-
-.productCheckoutContainer p {
+  display: flex;
+  margin: 10px;
+  justify-content: right;
+  width: 100%; }
+  .productCheckoutContainer p {
     padding: 0px 25px 10px 25px;
     color: #83472C;
-    border-bottom: 2px solid #83472C;
-}
+    border-bottom: 2px solid #83472C; }
 
 .eliminateProductFromCheckout {
-    color: #83472C;
-    background-color: white;
-    margin: 20px;
-    border: transparent;
-    font-size: 25px;
-    font-weight: bold;
-}
+  color: #83472C;
+  background-color: white;
+  margin: 20px;
+  border: transparent;
+  font-size: 25px;
+  font-weight: bold; }
 
 .checkoutBox {
-    width: 350px;
-    display: flex;
-    align-items: center;
-    padding: 25px;
-    justify-content: space-between;
-}
-
-.checkoutBox button {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between; }
+  .checkoutBox button {
     padding: 10px;
     background-color: #83472C;
     color: #f5e4bb;
     font-size: 15px;
     font-weight: bold;
     border-radius: 10px;
-    border-color: transparent;
-}
-
+    border-color: transparent; }
 
 /******************/
 /* THANK YOU PAGE */
 /******************/
-
 .thankYouContainer {
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /***********/
 /* CONTACT */
 /***********/
-
-.modalSubmitBox {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s opacity 0.5s;
-    overflow-y: initial;
-}
-
-.modalSubmitContainer {
-    background-color: white;
-    width: 700px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.modalSubmitContainer h2 {
-    margin: 30px;
-}
-
-.modalSubmitContainer h4 {
-    margin: 30px;
-}
-
-.modalSubmitContainer button {
-    background-color: #83472C;
-    color: #f5e4bb;
-    width: 60px;
-    height: 40px;
-    border: transparent;
-    border-radius: 10px;
-}
-
 .contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px; }
+  .contactContainer form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 100px;
-}
+    flex-direction: column; }
 
 .contactForm {
-    flex-direction: column;
-}
+  flex-direction: column; }
 
 .contactFormHeader {
-    margin-bottom: 50px;
-}
-
-.contactFormHeader h4 {
+  margin-bottom: 50px; }
+  .contactFormHeader h4 {
     margin-bottom: 20px;
-    font-size: 35px;
-}
+    font-size: 35px; }
+  .contactFormHeader p {
+    font-size: 25px; }
 
-.contactFormHeader p {
-    font-size: 25px;
-}
-
-.contactContainer form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contactFormInput{
-    padding: 10px;
-    margin-bottom: 10px;
-}
+.contactFormInput {
+  padding: 10px;
+  margin-bottom: 10px; }
 
 .formInputBigBox {
-    padding: 10px;
-    margin-bottom: 10px;
-    height: 140px;
-}
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 140px; }
 
 .formContactButton {
-    padding: 12px;
-    background-color: #f5e4bb;
-    color:#83472C;
-    border: transparent;
-    font-weight: bold;
-}
+  padding: 12px;
+  background-color: #f5e4bb;
+  color: #83472C;
+  border: transparent;
+  font-weight: bold; }
 
 .formContactButton:hover {
-    background-color: #83472C;
-    color: #f5e4bb;
-}
+  background-color: #83472C;
+  color: #f5e4bb; }
 
 .confirmButton {
-    background-color: #83472C;
-    color: #f5e4bb;
-}
+  background-color: #83472C;
+  color: #f5e4bb; }
 
 /**********/
 /* FOOTER */
 /**********/
+.footerContainer {
+  background-color: #83472C;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
-.modalSubscribeBox {
-    position: fixed;
+.footerFormHeader {
+  margin-bottom: 20px;
+  color: #f5e4bb; }
+  .footerFormHeader h4 {
+    font-size: 30px;
+    margin-bottom: 10px; }
+  .footerFormHeader p {
+    font-size: 20px; }
+
+.formInput {
+  padding: 10px; }
+
+.footerContactButton {
+  padding: 12px;
+  background-color: #f5e4bb;
+  color: #83472C;
+  border: transparent; }
+
+.footerContactButton:hover {
+  background-color: #83472C;
+  color: #f5e4bb;
+  border: 2px solid #f5e4bb; }
+
+.footerLogo img {
+  padding-bottom: 10px; }
+
+.footerSocialBar {
+  display: flex;
+  justify-content: center; }
+  .footerSocialBar img {
+    width: 50px;
+    padding: 5px; }
+
+/**********/
+/* MODALS */
+/**********/
+/**********************/
+/* EMAIL PROMPT MODAL */
+#emailBox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 1;
+  transition: visibility 0s opacity 0.5s;
+  overflow-y: initial; }
+
+.email-list-prompt {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  height: 350px;
+  border-radius: 15px; }
+
+.promptContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .promptContainer h1 {
+    margin-top: 45px;
+    font-size: 30px;
+    color: #83472C; }
+  .promptContainer h3 {
+    text-align: center;
+    font-size: 20px;
+    padding: 40px 20px 40px 20px;
+    margin: 0;
+    color: #83472C; }
+
+#btnCloseEmailPrompt {
+  width: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px; }
+
+.emailInput {
+  text-align: center; }
+
+.emailPlaceholder {
+  width: 250px;
+  padding: 10px; }
+
+.confirmEmailButton {
+  background-color: #83472C;
+  color: #f5e4bb;
+  padding: 10px;
+  border: transparent; }
+
+.email-prompt-hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+/***********************/
+/* SHOPPING CART MODAL */
+.modalBox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+  overflow-y: initial; }
+
+.modalShoppingCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  width: 80%;
+  height: 550px; }
+  .modalShoppingCart h3 {
+    position: absolute;
     top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s opacity 0.5s;
-    overflow-y: initial;
-}
+    padding-top: 25px;
+    font-size: 30px;
+    color: #83472C; }
 
-.modalSubscribeContainer {
-    background-color: white;
-    width: 700px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+#btnCloseCart {
+  width: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 20px;
+  background-color: white;
+  color: #83472C;
+  border: #83472C 2px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold; }
 
-.modalSubscribeContainer h2 {
-    margin: 30px;
-}
+#cart-container {
+  max-height: 350px;
+  overflow-y: scroll;
+  width: 80%;
+  padding-right: 80px; }
 
-.modalSubscribeContainer h4 {
-    margin: 30px;
-}
+#cart-container::-webkit-scrollbar {
+  background: white;
+  border-radius: 10px;
+  border-color: #83472C;
+  width: 7px; }
 
-.modalSubscribeContainer button {
+#cart-container::-webkit-scrollbar-thumb {
+  background: #83472C;
+  border-radius: 10px; }
+
+.productInCart {
+  display: flex;
+  align-items: center; }
+
+.productCartContainer {
+  display: flex;
+  margin: 10px 40px 10px 10px;
+  justify-content: right;
+  width: 100%; }
+  .productCartContainer p {
+    padding: 0px 25px 10px 25px;
+    color: #83472C;
+    border-bottom: 2px solid #83472C; }
+
+.eliminateProductFromCart {
+  color: #83472C;
+  background-color: white;
+  margin: 20px;
+  border: transparent;
+  font-size: 25px;
+  font-weight: bold; }
+
+.checkOutCart {
+  width: 300px;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between; }
+  .checkOutCart button {
+    padding: 10px;
+    background-color: #83472C;
+    color: #f5e4bb;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: transparent; }
+
+.totalShoppingCart {
+  color: #83472C;
+  font-size: 20px;
+  font-weight: bold; }
+
+/************************/
+/* MODAL SUBMIT CONTACT */
+.modalSubmitBox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+  overflow-y: initial; }
+
+.modalSubmitContainer {
+  background-color: white;
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .modalSubmitContainer h2 {
+    margin: 30px; }
+  .modalSubmitContainer h4 {
+    margin: 30px; }
+  .modalSubmitContainer button {
     background-color: #83472C;
     color: #f5e4bb;
     width: 60px;
     height: 40px;
     border: transparent;
-    border-radius: 10px;
-}
+    border-radius: 10px; }
 
-.footerContainer {
+/************************/
+/* SUBSCRIBE FORM MODAL */
+.modalSubscribeBox {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s opacity 0.5s;
+  overflow-y: initial; }
+
+.modalSubscribeContainer {
+  background-color: white;
+  width: 700px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .modalSubscribeContainer h2 {
+    margin: 30px; }
+  .modalSubscribeContainer h4 {
+    margin: 30px; }
+  .modalSubscribeContainer button {
     background-color: #83472C;
-    height: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.footerFormHeader {
-    margin-bottom: 20px;
     color: #f5e4bb;
-}
-
-.footerFormHeader h4 {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.footerFormHeader p {
-    font-size: 20px;
-}
-
-.formInput {
-    padding: 10px;
-}
-
-.footerContactButton {
-    padding: 12px;
-    background-color: #f5e4bb;
-    color:#83472C;
+    width: 60px;
+    height: 40px;
     border: transparent;
-}
-
-.footerContactButton:hover {
-    background-color: #83472C;
-    color: #f5e4bb;
-    border: 2px solid #f5e4bb
-}
-
-.footerLogo img {
-    padding-bottom: 10px;
-}
-
-.footerSocialBar {
-    display: flex;
-    justify-content: center;
-}
-
-.footerSocialBar img {
-    width: 50px;
-    padding: 5px;
-}
-
-.hidden {
-    display: none;
-}
+    border-radius: 10px; }
 
 .modal-visible {
-    visibility: visible;
-    opacity: 1;
-}
+  visibility: visible;
+  opacity: 1; }
 
-
-/*****************/
-/* MEDIA QUERIES */
-/*****************/
-
-
+.hidden {
+  display: none; }
