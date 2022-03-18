@@ -108,7 +108,7 @@ function loadEventListeners() {
 
 function showRecommended() {
 
-    fetch("../products-stock-data.json")
+    fetch("products-stock-data.json")
         .then(response => response.json())
         .then(data => {
 
