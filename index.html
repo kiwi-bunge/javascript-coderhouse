@@ -15,16 +15,11 @@
 
     <!-- STYLES IN CSS -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- TOASTIFY STYLES-->
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
-    <!-- SWEET ALERT STYLES -->
-
-    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.css">
-
     
 </head>
 
@@ -40,8 +35,8 @@
 
                 <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
                 <li><a href="index.html" class="navbar_links">HOME</a></li>
-                <li><a href="shop.html" class="navbar_links">SHOP</a></li>                
-                <li><a href="contact.html" class="navbar_links">CONTACT</a></li></li>
+                <li><a href="pages/shop.html" class="navbar_links">SHOP</a></li>                
+                <li><a href="pages/contact.html" class="navbar_links">CONTACT</a></li></li>
                 <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li>
 
                 <div class="btn-navbar-right">
@@ -77,7 +72,7 @@
         <div id="mainBanner" class="bannerContainer">
 
             <img src="img/mainBanner.png" alt="choppingBoardsBanner">
-            <a href="shop.html"><button class="shopNowButton">SHOP NOW ></button></a>
+            <a href="pages/shop.html"><button class="shopNowButton">SHOP NOW ></button></a>
 
         </div>
 
@@ -132,7 +127,7 @@
                 <div class="checkOutCart">
 
                     <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
-                    <a href="checkout.html" rel="noopener noreferrer"><button id="proceedToCheckout"> Checkout </button></a>
+                    <a href="pages/checkout.html" rel="noopener noreferrer"><button id="proceedToCheckout"> Checkout </button></a>
 
                 </div>
 
@@ -162,7 +157,7 @@
                 <form action="" method="get">
                     <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
                     <input type="email" placeholder="Your Email" class="formInput">
-                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" onclick="subscribeContact()">Subscribe</button>
+                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" id="subscribeForm">Subscribe</button>
                 </form>
 
             </div>
@@ -187,6 +182,17 @@
 
         </div>
 
+        <div class="modalSubscribeBox">
+            
+            <div class="modalSubscribeContainer">
+
+                <h2>Thanks for subscribing!</h2>
+                <button id="btnCloseSubscribe"> OK </button>
+
+            </div>
+
+        </div>
+
     </footer>
 
     <!-------------->
@@ -194,7 +200,6 @@
     <!-------------->    
     
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="javascript/index.js" type=""></script>
         
 </body>

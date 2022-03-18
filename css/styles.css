@@ -146,7 +146,6 @@ nav {
     opacity: 1;
     transition: visibility 0s opacity 0.5s;
     overflow-y: initial;
-
 }
 
 .email-list-prompt {
@@ -329,11 +328,6 @@ nav {
     border-color: transparent;
 }
 
-.modal-visible {
-    visibility: visible;
-    opacity: 1;
-}
-
 
 /*************/
 /* SHOP BODY */
@@ -502,6 +496,48 @@ nav {
 /* CONTACT */
 /***********/
 
+.modalSubmitBox {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+    overflow-y: initial;
+}
+
+.modalSubmitContainer {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalSubmitContainer h2 {
+    margin: 30px;
+}
+
+.modalSubmitContainer h4 {
+    margin: 30px;
+}
+
+.modalSubmitContainer button {
+    background-color: #83472C;
+    color: #f5e4bb;
+    width: 60px;
+    height: 40px;
+    border: transparent;
+    border-radius: 10px;
+}
+
 .contactContainer {
     display: flex;
     justify-content: center;
@@ -564,6 +600,48 @@ nav {
 /* FOOTER */
 /**********/
 
+.modalSubscribeBox {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+    overflow-y: initial;
+}
+
+.modalSubscribeContainer {
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalSubscribeContainer h2 {
+    margin: 30px;
+}
+
+.modalSubscribeContainer h4 {
+    margin: 30px;
+}
+
+.modalSubscribeContainer button {
+    background-color: #83472C;
+    color: #f5e4bb;
+    width: 60px;
+    height: 40px;
+    border: transparent;
+    border-radius: 10px;
+}
+
 .footerContainer {
     background-color: #83472C;
     height: 400px;
@@ -599,7 +677,8 @@ nav {
 
 .footerContactButton:hover {
     background-color: #83472C;
-    color: #f5e4bb
+    color: #f5e4bb;
+    border: 2px solid #f5e4bb
 }
 
 .footerLogo img {
@@ -619,5 +698,15 @@ nav {
 .hidden {
     display: none;
 }
+
+.modal-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
 
 

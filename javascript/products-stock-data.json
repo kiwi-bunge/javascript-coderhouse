@@ -1,151 +1,151 @@
 [
     
-    {"id": 1, "name": "Cinnamon Kitchen Cutting Board", "category": "chopping-boards", "description": "recommended Medium 30 x 21.5cm - Black", "price": 23.95, "img": "img/products-images/choppingBoards/cinnamon-kitchen-cutting-board-medium-30x21.5cm-black.png", "quantity": 1, "recommended": "true"},
+    {"id": 1, "name": "Cinnamon Kitchen Cutting Board", "category": "chopping-boards", "description": "recommended Medium 30 x 21.5cm - Black", "price": 23.95, "img": "/img/products-images/choppingBoards/cinnamon-kitchen-cutting-board-medium-30x21.5cm-black.png", "quantity": 1, "recommended": "true"},
 
-    {"id": 2, "name": "Dreamfarm Fledge", "category": "chopping-boards", "description": "Bamboo 3 pieces set", "price": 79.95, "img": "img/products-images/choppingBoards/dreamfarm-fledge-bamboo-3pc-set.png", "quantity": 1},
+    {"id": 2, "name": "Dreamfarm Fledge", "category": "chopping-boards", "description": "Bamboo 3 pieces set", "price": 79.95, "img": "/img/products-images/choppingBoards/dreamfarm-fledge-bamboo-3pc-set.png", "quantity": 1},
 
-    {"id": 3, "name": "Global Triply", "category": "chopping-boards", "description": "Bamboo utility boards set of 2", "price": 19.95, "img": "img/products-images/choppingBoards/global-triply-bamboo-utility-boards-set-of-2.png", "quantity": 1},
+    {"id": 3, "name": "Global Triply", "category": "chopping-boards", "description": "Bamboo utility boards set of 2", "price": 19.95, "img": "/img/products-images/choppingBoards/global-triply-bamboo-utility-boards-set-of-2.png", "quantity": 1},
 
-    {"id": 4, "name": "Grand Designs Beechwood", "category": "chopping-boards", "description": "Spiked carving board", "price": 89.95, "img": "img/products-images/choppingBoards/grand-designs-beechwood-spiked-carving-board.png", "quantity": 1},
+    {"id": 4, "name": "Grand Designs Beechwood", "category": "chopping-boards", "description": "Spiked carving board", "price": 89.95, "img": "/img/products-images/choppingBoards/grand-designs-beechwood-spiked-carving-board.png", "quantity": 1},
 
-    {"id": 5, "name": "Peer Sorensen End Grain", "category": "chopping-boards", "description": "Bamboo small 30cm x 20cm", "price": 9.95, "img": "img/products-images/choppingBoards/peer-sorensen-end-grain-bamboo-small-board-30cm-x-20cm.png", "quantity": 1},
+    {"id": 5, "name": "Peer Sorensen End Grain", "category": "chopping-boards", "description": "Bamboo small 30cm x 20cm", "price": 9.95, "img": "/img/products-images/choppingBoards/peer-sorensen-end-grain-bamboo-small-board-30cm-x-20cm.png", "quantity": 1},
 
-    {"id": 6, "name": "Peer Sorensen Tapas Board", "category": "chopping-boards", "description": "21.5cm x 12.5cm", "price": 19.95, "img": "img/products-images/choppingBoards/peer-sorensen-tapas-board-47x21.5x12.5cm.png", "quantity": 1},
+    {"id": 6, "name": "Peer Sorensen Tapas Board", "category": "chopping-boards", "description": "21.5cm x 12.5cm", "price": 19.95, "img": "/img/products-images/choppingBoards/peer-sorensen-tapas-board-47x21.5x12.5cm.png", "quantity": 1},
 
-    {"id": 7, "name": "Stax Cutting Board Set", "category": "chopping-boards", "description": "3 pieces set", "price": 49.95, "img": "img/products-images/choppingBoards/stax-cutting-board-set-of-3.png", "quantity": 1},
+    {"id": 7, "name": "Stax Cutting Board Set", "category": "chopping-boards", "description": "3 pieces set", "price": 49.95, "img": "/img/products-images/choppingBoards/stax-cutting-board-set-of-3.png", "quantity": 1},
 
-    {"id": 8, "name": "Villeryo & Boch Artesano", "category": "chopping-boards", "description": "Original chopping and serving board", "price": 71.95, "img": "img/products-images/choppingBoards/villeroy-boch-artesano-original-chopping-and-serving-board.png", "quantity": 1},
+    {"id": 8, "name": "Villeryo & Boch Artesano", "category": "chopping-boards", "description": "Original chopping and serving board", "price": 71.95, "img": "/img/products-images/choppingBoards/villeroy-boch-artesano-original-chopping-and-serving-board.png", "quantity": 1},
 
-    {"id": 9, "name": "Wild Wood Gosford", "category": "chopping-boards", "description": "Large round cutting board 40 x 2cm", "price": 93.95, "img": "img/products-images/choppingBoards/wild-wood-gosford-large-round-cutting-board40x2cm.png", "quantity": 1},
+    {"id": 9, "name": "Wild Wood Gosford", "category": "chopping-boards", "description": "Large round cutting board 40 x 2cm", "price": 93.95, "img": "/img/products-images/choppingBoards/wild-wood-gosford-large-round-cutting-board40x2cm.png", "quantity": 1},
 
 
 
 
 
-    {"id": 10, "name": "Progressive ProKeeper Baker's Storage", "category": "food-containers", "description": "Set of 6", "price": 119.95, "img": "img/products-images/foodContainers/progressive-proKeeper-bakers-storage-set-of-6.png", "quantity": 1, "recommended": "true"},
+    {"id": 10, "name": "Progressive ProKeeper Baker's Storage", "category": "food-containers", "description": "Set of 6", "price": 119.95, "img": "/img/products-images/foodContainers/progressive-proKeeper-bakers-storage-set-of-6.png", "quantity": 1, "recommended": "true"},
 
-    {"id": 11, "name": "Ecology Pantry Round Biscuit Barrel", "category": "food-containers", "description": "3L", "price": 29.95, "img": "img/products-images/foodContainers/ecology-pantry-round-biscuit-barrel-3L.png", "quantity": 1},
+    {"id": 11, "name": "Ecology Pantry Round Biscuit Barrel", "category": "food-containers", "description": "3L", "price": 29.95, "img": "/img/products-images/foodContainers/ecology-pantry-round-biscuit-barrel-3L.png", "quantity": 1},
 
-    {"id": 12, "name": "Pyrex Storage", "category": "food-containers", "description": "12 piece set with navy lids", "price": 38.95, "img": "img/products-images/foodContainers/pyrex-storage-12-piece-set-with-navy-lids.png", "quantity": 1},
+    {"id": 12, "name": "Pyrex Storage", "category": "food-containers", "description": "12 piece set with navy lids", "price": 38.95, "img": "/img/products-images/foodContainers/pyrex-storage-12-piece-set-with-navy-lids.png", "quantity": 1},
 
-    {"id": 13, "name": "Ecology Pantry Round Canister", "category": "food-containers", "description": "Set of 4", "price": 54.95, "img": "img/products-images/foodContainers/ecology-pantry-round-canister-set-of-4.png", "quantity": 1},
+    {"id": 13, "name": "Ecology Pantry Round Canister", "category": "food-containers", "description": "Set of 4", "price": 54.95, "img": "/img/products-images/foodContainers/ecology-pantry-round-canister-set-of-4.png", "quantity": 1},
 
-    {"id": 14, "name": "Ecology Pantry Square Canister", "category": "food-containers", "description": "10.5m set of 3", "price": 35.95, "img": "img/products-images/foodContainers/ecology-pantry-square-canister-10.5m-set-of-3.png", "quantity": 1},
+    {"id": 14, "name": "Ecology Pantry Square Canister", "category": "food-containers", "description": "10.5m set of 3", "price": 35.95, "img": "/img/products-images/foodContainers/ecology-pantry-square-canister-10.5m-set-of-3.png", "quantity": 1},
 
-    {"id": 15, "name": "Bodum Presso Storage Jar", "category": "food-containers", "description": "Set of 12 Matisse", "price": 109.95, "img": "img/products-images/foodContainers/bodum-presso-storage-jar-set-of-12-matisse-.png", "quantity": 1},
+    {"id": 15, "name": "Bodum Presso Storage Jar", "category": "food-containers", "description": "Set of 12 Matisse", "price": 109.95, "img": "/img/products-images/foodContainers/bodum-presso-storage-jar-set-of-12-matisse-.png", "quantity": 1},
 
-    {"id": 16, "name": "Ototo Kitty Catainers Container", "category": "food-containers", "description": "Set of 2", "price": 41.95, "img": "img/products-images/foodContainers/ototo-kitty-catainers-container-set-of-2.png", "quantity": 1},
+    {"id": 16, "name": "Ototo Kitty Catainers Container", "category": "food-containers", "description": "Set of 2", "price": 41.95, "img": "/img/products-images/foodContainers/ototo-kitty-catainers-container-set-of-2.png", "quantity": 1},
 
-    {"id": 17, "name": "Pyrex Simply Store", "category": "food-containers", "description": "Set of 4 cups w/Star Wars Lid Hats & Gifts", "price": 16.95, "img": "img/products-images/foodContainers/pyrex-simply-store-4-cup-round-with-lid-star-wars-hats-andgifts.png", "quantity": 1},
+    {"id": 17, "name": "Pyrex Simply Store", "category": "food-containers", "description": "Set of 4 cups w/Star Wars Lid Hats & Gifts", "price": 16.95, "img": "/img/products-images/foodContainers/pyrex-simply-store-4-cup-round-with-lid-star-wars-hats-andgifts.png", "quantity": 1},
 
-    {"id": 18, "name": "Joseph Joseph Nest Lock Container", "category": "food-containers", "description": "Set of 5 Editions sage", "price": 59.95, "img": "img/products-images/foodContainers/joseph-joseph-nest-lock-container-set-of-5-editions-sage.png", "quantity": 1},
+    {"id": 18, "name": "Joseph Joseph Nest Lock Container", "category": "food-containers", "description": "Set of 5 Editions sage", "price": 59.95, "img": "/img/products-images/foodContainers/joseph-joseph-nest-lock-container-set-of-5-editions-sage.png", "quantity": 1},
 
-    {"id": 19, "name": "Avanti Food Jar", "category": "food-containers", "description": "650ml Duck egg blue", "price": 15.95, "img": "img/products-images/foodContainers/avanti-food-jar-650ml-duck-egg-blue.png", "quantity": 1},
+    {"id": 19, "name": "Avanti Food Jar", "category": "food-containers", "description": "650ml Duck egg blue", "price": 15.95, "img": "/img/products-images/foodContainers/avanti-food-jar-650ml-duck-egg-blue.png", "quantity": 1},
 
 
 
 
-    {"id": 20, "name": "Dreamfarm Set", "category": "bbq-tools", "description": "Set of BBQ grill tools", "price": 120.95, "img": "img/products-images/bbqTools/dreamfarm-set-of-bbq-grill-tools.png", "quantity": 1, "recommended": "true"},
+    {"id": 20, "name": "Dreamfarm Set", "category": "bbq-tools", "description": "Set of BBQ grill tools", "price": 120.95, "img": "/img/products-images/bbqTools/dreamfarm-set-of-bbq-grill-tools.png", "quantity": 1, "recommended": "true"},
 
-    {"id": 21, "name": "Tramontina Churrasco", "category": "bbq-tools", "description": "2 piece carving set", "price": 39.95, "img": "img/products-images/bbqTools/tramontina-churrasco-2pc-carving-set.png", "quantity": 1},
+    {"id": 21, "name": "Tramontina Churrasco", "category": "bbq-tools", "description": "2 piece carving set", "price": 39.95, "img": "/img/products-images/bbqTools/tramontina-churrasco-2pc-carving-set.png", "quantity": 1},
 
-    {"id": 22, "name": "Avanti Bamboo Skewers", "category": "bbq-tools", "description": "25cm - Pack of 100", "price": 2.95, "img": "img/products-images/bbqTools/avanti-bamboo-skewers-25cm-pack-of-100.png", "quantity": 1},
+    {"id": 22, "name": "Avanti Bamboo Skewers", "category": "bbq-tools", "description": "25cm - Pack of 100", "price": 2.95, "img": "/img/products-images/bbqTools/avanti-bamboo-skewers-25cm-pack-of-100.png", "quantity": 1},
 
-    {"id": 23, "name": "Davis & Waddell Flinders BBQ Tool Set", "category": "bbq-tools", "description": "Set of 4 in bag", "price": 27.95, "img": "img/products-images/bbqTools/davis-waddell-flinders-acacia-bbq-tool-set-in-bag-set-of-4.png", "quantity": 1},
+    {"id": 23, "name": "Davis & Waddell Flinders BBQ Tool Set", "category": "bbq-tools", "description": "Set of 4 in bag", "price": 27.95, "img": "/img/products-images/bbqTools/davis-waddell-flinders-acacia-bbq-tool-set-in-bag-set-of-4.png", "quantity": 1},
 
-    {"id": 24, "name": "OXO Good Grips", "category": "bbq-tools", "description": "Stainless steel tongs 41cm", "price": 19.95, "img": "img/products-images/bbqTools/oxo-stainless-steel-tongs-41cm.png", "quantity": 1},
+    {"id": 24, "name": "OXO Good Grips", "category": "bbq-tools", "description": "Stainless steel tongs 41cm", "price": 19.95, "img": "/img/products-images/bbqTools/oxo-stainless-steel-tongs-41cm.png", "quantity": 1},
 
-    {"id": 25, "name": "Davis & Waddell BBQ Tool Set", "category": "bbq-tools", "description": "18 Piece set with aluminium case", "price": 59.95, "img": "img/products-images/bbqTools/davis-waddell-bbq-tool-set-with-aluminium-case-set-of-18.png", "quantity": 1},
+    {"id": 25, "name": "Davis & Waddell BBQ Tool Set", "category": "bbq-tools", "description": "18 Piece set with aluminium case", "price": 59.95, "img": "/img/products-images/bbqTools/davis-waddell-bbq-tool-set-with-aluminium-case-set-of-18.png", "quantity": 1},
 
-    {"id": 26, "name": "Gefu BBQ Skewers", "category": "bbq-tools", "description": "Stainless steel 5 pieces 45cm", "price": 46.95, "img": "img/products-images/bbqTools/gefu-bbq-s-s-barbecue-skewers-5pcs-45cmx7cmx10cm.png", "quantity": 1},
+    {"id": 26, "name": "Gefu BBQ Skewers", "category": "bbq-tools", "description": "Stainless steel 5 pieces 45cm", "price": 46.95, "img": "/img/products-images/bbqTools/gefu-bbq-s-s-barbecue-skewers-5pcs-45cmx7cmx10cm.png", "quantity": 1},
 
 
 
 
-    {"id": 27, "name": "Kilner Butter Cherner", "category": "utensils-gadgets", "description": "1L", "price": 50.95, "img": "img/products-images/utensilsGadgets/butter-churner.png", "quantity": 1},
+    {"id": 27, "name": "Kilner Butter Cherner", "category": "utensils-gadgets", "description": "1L", "price": 50.95, "img": "/img/products-images/utensilsGadgets/butter-churner.png", "quantity": 1},
 
-    {"id": 28, "name": "Dreamfarm Flisk Whisk", "category": "utensils-gadgets", "description": "Black", "price": 19.95, "img": "img/products-images/utensilsGadgets/dreamfarm-flisk-whisk-black.png", "quantity": 1},
+    {"id": 28, "name": "Dreamfarm Flisk Whisk", "category": "utensils-gadgets", "description": "Black", "price": 19.95, "img": "/img/products-images/utensilsGadgets/dreamfarm-flisk-whisk-black.png", "quantity": 1},
 
-    {"id": 29, "name": "Avanti Salad Spinner", "category": "utensils-gadgets", "description": "24cm", "price": 19.95, "img": "img/products-images/utensilsGadgets/salad-spinner.png", "quantity": 1},
+    {"id": 29, "name": "Avanti Salad Spinner", "category": "utensils-gadgets", "description": "24cm", "price": 19.95, "img": "/img/products-images/utensilsGadgets/salad-spinner.png", "quantity": 1},
 
-    {"id": 30, "name": "Silicon Moulds", "category": "utensils-gadgets", "description": "Heart shape red", "price": 5.50, "img": "img/products-images/utensilsGadgets/silicon-moulds.png", "quantity": 1},
+    {"id": 30, "name": "Silicon Moulds", "category": "utensils-gadgets", "description": "Heart shape red", "price": 5.50, "img": "/img/products-images/utensilsGadgets/silicon-moulds.png", "quantity": 1},
 
-    {"id": 31, "name": "Wild Wood Spagetti Measure", "category": "utensils-gadgets", "description": "Wooden beech 31cm", "price": 7.95, "img": "img/products-images/utensilsGadgets/spagetti-measure.png", "quantity": 1, "recommended": "true"},
+    {"id": 31, "name": "Wild Wood Spagetti Measure", "category": "utensils-gadgets", "description": "Wooden beech 31cm", "price": 7.95, "img": "/img/products-images/utensilsGadgets/spagetti-measure.png", "quantity": 1, "recommended": "true"},
 
 
 
 
-    {"id": 32, "name": "Avanti Silicone Oven Glove", "category": "oven-gloves", "description": "Charcoal", "price": 11.95, "img": "img/products-images/ovenGloves/avanti-silicone-oven-glove-charcoal.png", "quantity": 1},
+    {"id": 32, "name": "Avanti Silicone Oven Glove", "category": "oven-gloves", "description": "Charcoal", "price": 11.95, "img": "/img/products-images/ovenGloves/avanti-silicone-oven-glove-charcoal.png", "quantity": 1},
 
-    {"id": 33, "name": "Avanti Silicone Double Oven Glove", "category": "oven-gloves", "description": "Blue", "price": 22.95, "img": "img/products-images/ovenGloves/avanti-silicone-double-oven-glove.png", "quantity": 1},
+    {"id": 33, "name": "Avanti Silicone Double Oven Glove", "category": "oven-gloves", "description": "Blue", "price": 22.95, "img": "/img/products-images/ovenGloves/avanti-silicone-double-oven-glove.png", "quantity": 1},
 
-    {"id": 34, "name": "Avanti Silicone Oven Glove", "category": "oven-gloves", "description": "Blue", "price": 15.95, "img": "img/products-images/ovenGloves/avanti-silicone-oven-glove.png", "quantity": 1},
+    {"id": 34, "name": "Avanti Silicone Oven Glove", "category": "oven-gloves", "description": "Blue", "price": 15.95, "img": "/img/products-images/ovenGloves/avanti-silicone-oven-glove.png", "quantity": 1},
 
-    {"id": 35, "name": "Le Creuset Double Oven Glove", "category": "oven-gloves", "description": "Denim collection dark blue", "price": 60, "img": "img/products-images/ovenGloves/le-creuset-double-oven-glove-denim-collection-dark-blue.png", "quantity": 1},
+    {"id": 35, "name": "Le Creuset Double Oven Glove", "category": "oven-gloves", "description": "Denim collection dark blue", "price": 60, "img": "/img/products-images/ovenGloves/le-creuset-double-oven-glove-denim-collection-dark-blue.png", "quantity": 1},
 
-    {"id": 36, "name": "Ulster Weavers Oriental Birds", "category": "oven-gloves", "description": "Double oven gloves", "price": 26.95, "img": "img/products-images/ovenGloves/ulster-weavers-oriental-birds-double-oven-glove.png", "quantity": 1},
+    {"id": 36, "name": "Ulster Weavers Oriental Birds", "category": "oven-gloves", "description": "Double oven gloves", "price": 26.95, "img": "/img/products-images/ovenGloves/ulster-weavers-oriental-birds-double-oven-glove.png", "quantity": 1},
 
-    {"id": 37, "name": "Ulster Weavers Oriental Birds", "category": "oven-gloves", "description": "Oven glove gauntlet", "price": 22.95, "img": "img/products-images/ovenGloves/ulster-weavers-oriental-birds-oven-glove-gauntlet.png", "quantity": 1},
+    {"id": 37, "name": "Ulster Weavers Oriental Birds", "category": "oven-gloves", "description": "Oven glove gauntlet", "price": 22.95, "img": "/img/products-images/ovenGloves/ulster-weavers-oriental-birds-oven-glove-gauntlet.png", "quantity": 1},
 
 
 
 
-    {"id": 38, "name": "D.line Al Dente Pasta Machine", "category": "pasta-machines", "description": "With detachable cutter 150mm", "price": 39.95, "img": "img/products-images/pastaMachines/d-line-al-dente-pasta-machine-with-detachable-cutter-15cm.png", "quantity": 1},
+    {"id": 38, "name": "D.line Al Dente Pasta Machine", "category": "pasta-machines", "description": "With detachable cutter 150mm", "price": 39.95, "img": "/img/products-images/pastaMachines/d-line-al-dente-pasta-machine-with-detachable-cutter-15cm.png", "quantity": 1},
 
-    {"id": 39, "name": "Philips Avance Pasta and Noodle Maker", "category": "pasta-machines", "description": "4discs cashmere grey", "price": 352.95, "img": "img/products-images/pastaMachines/philips-avance-collection-pasta-noodle-maker-4discs-cashmere-grey.png", "quantity": 1},
+    {"id": 39, "name": "Philips Avance Pasta and Noodle Maker", "category": "pasta-machines", "description": "4discs cashmere grey", "price": 352.95, "img": "/img/products-images/pastaMachines/philips-avance-collection-pasta-noodle-maker-4discs-cashmere-grey.png", "quantity": 1},
 
-    {"id": 40, "name": "Avanti Ravioli Round & Square Cutter", "category": "pasta-machines", "description": "Set of 2", "price": 8.95, "img": "img/products-images/pastaMachines/avanti-ravioli-round-square-cutter-set-of-2.png", "quantity": 1},
+    {"id": 40, "name": "Avanti Ravioli Round & Square Cutter", "category": "pasta-machines", "description": "Set of 2", "price": 8.95, "img": "/img/products-images/pastaMachines/avanti-ravioli-round-square-cutter-set-of-2.png", "quantity": 1},
 
-    {"id": 41, "name": "Avanti Wooden Gnocchi Board", "category": "pasta-machines", "description": "", "price": 3.95, "img": "img/products-images/pastaMachines/avanti-wooden-gnocchi-board.png", "quantity": 1},
+    {"id": 41, "name": "Avanti Wooden Gnocchi Board", "category": "pasta-machines", "description": "", "price": 3.95, "img": "/img/products-images/pastaMachines/avanti-wooden-gnocchi-board.png", "quantity": 1},
 
-    {"id": 42, "name": "Marcato Pasta Bike", "category": "pasta-machines", "description": "Red", "price": 44.95, "img": "img/products-images/pastaMachines/marcato-pasta-bike-red-1.png", "quantity": 1},
+    {"id": 42, "name": "Marcato Pasta Bike", "category": "pasta-machines", "description": "Red", "price": 44.95, "img": "/img/products-images/pastaMachines/marcato-pasta-bike-red-1.png", "quantity": 1},
 
-    {"id": 43, "name": "Avanti Square Ravioli Cutter", "category": "pasta-machines", "description": "6 x 6cm", "price": 5.95, "img": "img/products-images/pastaMachines/avanti-square-ravioli-cutter-6x6cm.png", "quantity": 1},
+    {"id": 43, "name": "Avanti Square Ravioli Cutter", "category": "pasta-machines", "description": "6 x 6cm", "price": 5.95, "img": "/img/products-images/pastaMachines/avanti-square-ravioli-cutter-6x6cm.png", "quantity": 1},
 
-    {"id": 44, "name": "Marcato Capellini Attachment", "category": "pasta-machines", "description": "", "price": 59.95, "img": "img/products-images/pastaMachines/marcato-attachment-capellini.png", "quantity": 1},
+    {"id": 44, "name": "Marcato Capellini Attachment", "category": "pasta-machines", "description": "", "price": 59.95, "img": "/img/products-images/pastaMachines/marcato-attachment-capellini.png", "quantity": 1},
 
-    {"id": 45, "name": "Avanti Round DUmpling Ravioli Cutter", "category": "pasta-machines", "description": "6cm", "price": 5.95, "img": "img/products-images/pastaMachines/avanti-round-dumpling-ravioli-cutter-6cm.png", "quantity": 1},
+    {"id": 45, "name": "Avanti Round DUmpling Ravioli Cutter", "category": "pasta-machines", "description": "6cm", "price": 5.95, "img": "/img/products-images/pastaMachines/avanti-round-dumpling-ravioli-cutter-6cm.png", "quantity": 1},
 
-    {"id": 46, "name": "D.line Al Dente Ravioli Maker", "category": "pasta-machines", "description": "", "price": 17.95, "img": "img/products-images/pastaMachines/d-line-al-dente-ravioli-maker.png", "quantity": 1},
+    {"id": 46, "name": "D.line Al Dente Ravioli Maker", "category": "pasta-machines", "description": "", "price": 17.95, "img": "/img/products-images/pastaMachines/d-line-al-dente-ravioli-maker.png", "quantity": 1},
 
 
 
 
-    {"id": 47, "name": "Davis & Waddell Romano Spice Jars", "category": "spice-mills", "description": "Set of 12 w/Rack 21cm", "price": 39.95, "img": "img/products-images/spiceMills/davis-waddell-romano-spice-jar-set-with-rack-12pc.png", "quantity": 1},
+    {"id": 47, "name": "Davis & Waddell Romano Spice Jars", "category": "spice-mills", "description": "Set of 12 w/Rack 21cm", "price": 39.95, "img": "/img/products-images/spiceMills/davis-waddell-romano-spice-jar-set-with-rack-12pc.png", "quantity": 1},
 
-    {"id": 48, "name": "Stax Spice Drawer Organiser", "category": "spice-mills", "description": "Bamboo", "price": 17.95, "img": "img/products-images/spiceMills/stax-bamboo-spice-drawer-organiser.png", "quantity": 1},
+    {"id": 48, "name": "Stax Spice Drawer Organiser", "category": "spice-mills", "description": "Bamboo", "price": 17.95, "img": "/img/products-images/spiceMills/stax-bamboo-spice-drawer-organiser.png", "quantity": 1},
 
-    {"id": 49, "name": "Microplane Space Mill", "category": "spice-mills", "description": "11.5cm Black", "price": 36.95, "img": "img/products-images/spiceMills/microplane-spice-mill-11-5x4-5cm-black.png", "quantity": 1},
+    {"id": 49, "name": "Microplane Space Mill", "category": "spice-mills", "description": "11.5cm Black", "price": 36.95, "img": "/img/products-images/spiceMills/microplane-spice-mill-11-5x4-5cm-black.png", "quantity": 1},
 
-    {"id": 50, "name": "Cole & Mason Regent Mills", "category": "spice-mills", "description": "Concrete 18cm", "price": 89.95, "img": "img/products-images/spiceMills/cole-mason-regent-mills-concrete-18cm.png", "quantity": 1},
+    {"id": 50, "name": "Cole & Mason Regent Mills", "category": "spice-mills", "description": "Concrete 18cm", "price": 89.95, "img": "/img/products-images/spiceMills/cole-mason-regent-mills-concrete-18cm.png", "quantity": 1},
 
-    {"id": 51, "name": "Avanti Revolving Herb Spice Rack", "category": "spice-mills", "description": "16 Jars", "price": 74.90, "img": "img/products-images/spiceMills/avanti-revolving-herb-spice-rack-16-jars.png", "quantity": 1},
+    {"id": 51, "name": "Avanti Revolving Herb Spice Rack", "category": "spice-mills", "description": "16 Jars", "price": 74.90, "img": "/img/products-images/spiceMills/avanti-revolving-herb-spice-rack-16-jars.png", "quantity": 1},
 
-    {"id": 52, "name": "Avanti Revolving Herb Spice Rack", "category": "spice-mills", "description": "12 Jars", "price": 58.95, "img": "img/products-images/spiceMills/avanti-revolving-herb-spice-rack-12-jars.png", "quantity": 1},
+    {"id": 52, "name": "Avanti Revolving Herb Spice Rack", "category": "spice-mills", "description": "12 Jars", "price": 58.95, "img": "/img/products-images/spiceMills/avanti-revolving-herb-spice-rack-12-jars.png", "quantity": 1},
 
-    {"id": 53, "name": "Dreamfarm Orlid Lite Spice Jar", "category": "spice-mills", "description": "", "price": 9.95, "img": "img/products-images/spiceMills/dreamfarm-orlid-lite.png", "quantity": 1},
+    {"id": 53, "name": "Dreamfarm Orlid Lite Spice Jar", "category": "spice-mills", "description": "", "price": 9.95, "img": "/img/products-images/spiceMills/dreamfarm-orlid-lite.png", "quantity": 1},
 
 
 
 
-    {"id": 54, "name": "Messermeister Mu Bamboo Chef's Knife", "category": "knives", "description": "8 inch / 20 cm", "price": 179.95, "img": "img/products-images/knives/messermeister-mu-bamboo-chef-s-knife-8inch-20cm.png", "quantity": 1},
+    {"id": 54, "name": "Messermeister Mu Bamboo Chef's Knife", "category": "knives", "description": "8 inch / 20 cm", "price": 179.95, "img": "/img/products-images/knives/messermeister-mu-bamboo-chef-s-knife-8inch-20cm.png", "quantity": 1},
 
-    {"id": 55, "name": "Opinel Les Forges 1890 Chef Knife", "category": "knives", "description": "20 cm", "price": 235.95, "img": "img/products-images/knives/opinel-les-forges-1890-chef-knife-20cm.png", "quantity": 1},
+    {"id": 55, "name": "Opinel Les Forges 1890 Chef Knife", "category": "knives", "description": "20 cm", "price": 235.95, "img": "/img/products-images/knives/opinel-les-forges-1890-chef-knife-20cm.png", "quantity": 1},
 
-    {"id": 56, "name": "Shun Classic White Chefs Knife", "category": "knives", "description": "20 cm", "price": 228.95, "img": "img/products-images/knives/kai-shun-classic-white-chefs-knife-20cm.png", "quantity": 1},
+    {"id": 56, "name": "Shun Classic White Chefs Knife", "category": "knives", "description": "20 cm", "price": 228.95, "img": "/img/products-images/knives/kai-shun-classic-white-chefs-knife-20cm.png", "quantity": 1},
 
-    {"id": 57, "name": "Wusthof Classic Ridged Cooks Knife", "category": "knives", "description": "20 cm", "price": 227.95, "img": "img/products-images/knives/wusthof-classic-ridged-cooks-knife-20cm.png", "quantity": 1},
+    {"id": 57, "name": "Wusthof Classic Ridged Cooks Knife", "category": "knives", "description": "20 cm", "price": 227.95, "img": "/img/products-images/knives/wusthof-classic-ridged-cooks-knife-20cm.png", "quantity": 1},
 
-    {"id": 58, "name": "Shun Premier Chefs Knife", "category": "knives", "description": "20 cm", "price": 223.95, "img": "img/products-images/knives/shun-premier-chefs-knife-20cm.png", "quantity": 1},
+    {"id": 58, "name": "Shun Premier Chefs Knife", "category": "knives", "description": "20 cm", "price": 223.95, "img": "/img/products-images/knives/shun-premier-chefs-knife-20cm.png", "quantity": 1},
 
-    {"id": 59, "name": "Mundial Bonza Knife Block", "category": "knives", "description": "9 Piece set", "price": 292.00, "img": "img/products-images/knives/mundial-bonza-knife-block-set-of-9.png", "quantity": 1},
+    {"id": 59, "name": "Mundial Bonza Knife Block", "category": "knives", "description": "9 Piece set", "price": 292.00, "img": "/img/products-images/knives/mundial-bonza-knife-block-set-of-9.png", "quantity": 1},
 
-    {"id": 60, "name": "Global Takashi Knife Block", "category": "knives", "description": "8 Piece set", "price": 518.95, "img": "img/products-images/knives/global-takashi-knife-block-8-piece-set.png", "quantity": 1},
+    {"id": 60, "name": "Global Takashi Knife Block", "category": "knives", "description": "8 Piece set", "price": 518.95, "img": "/img/products-images/knives/global-takashi-knife-block-8-piece-set.png", "quantity": 1},
 
-    {"id": 61, "name": "Furi Pro Magnetic Hexagonal Knife Block", "category": "knives", "description": "7 Piece set", "price": 263.95, "img": "img/products-images/knives/furi-pro-magnetic-hexagonal-knife-block-7-piece-set.png", "quantity": 1},
+    {"id": 61, "name": "Furi Pro Magnetic Hexagonal Knife Block", "category": "knives", "description": "7 Piece set", "price": 263.95, "img": "/img/products-images/knives/furi-pro-magnetic-hexagonal-knife-block-7-piece-set.png", "quantity": 1},
 
-    {"id": 62, "name": "Dexter Steel Kife Sharpener", "category": "knives", "description": "30 cm Smooth 07323", "price": 73.95, "img": "img/products-images/knives/dexter-steel-30cm-smooth-07323.png", "quantity": 1},
+    {"id": 62, "name": "Dexter Steel Kife Sharpener", "category": "knives", "description": "30 cm Smooth 07323", "price": 73.95, "img": "/img/products-images/knives/dexter-steel-30cm-smooth-07323.png", "quantity": 1},
 
-    {"id": 54, "name": "Edge Master Ceramic Combination Stone", "category": "knives", "description": "400/1000 Grit", "price": 59.95, "img": "img/products-images/knives/edgemaster-ceramic-combi-stone-400-1000.png", "quantity": 1}
+    {"id": 54, "name": "Edge Master Ceramic Combination Stone", "category": "knives", "description": "400/1000 Grit", "price": 59.95, "img": "/img/products-images/knives/edgemaster-ceramic-combi-stone-400-1000.png", "quantity": 1}
     
 ]

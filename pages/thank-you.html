@@ -15,17 +15,12 @@
 
     <!-- STYLES IN CSS -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- TOASTIFY STYLES-->
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
-    <!-- SWEET ALERT STYLES -->
-
-    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.css">
-
-    
 </head>
 
 <body>
@@ -38,30 +33,27 @@
         <nav>
             <ul class="navbar">
 
-                <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
-                <li><a href="index.html" class="navbar_links">HOME</a></li>
+                <a href="../index.html"><img class="logo-navbar" src="../img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
+                <li><a href="../index.html" class="navbar_links">HOME</a></li>
                 <li><a href="shop.html" class="navbar_links">SHOP</a></li>                
                 <li><a href="contact.html" class="navbar_links">CONTACT</a></li></li>
                 <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li>
-
                 <div class="btn-navbar-right">
-
-                    <img id="btnShoppingCart" src="img/shopping-cart.png" alt="button-Shopping-Cart">
+                    <img id="btnShoppingCart" src="../img/shopping-cart.png" alt="button-Shopping-Cart">
                     <span id="cartQuantity">0</span>
-
                 </div>
 
             </ul>
         </nav>
 
-        <div class="promotionBar">  
+        <div class="promotionBar">
 
             <p>FREE SHIPPING ORDERS OVER $100*</p>
             <p>FAST DELIVERY</p>
             <p>90 DAY RETURNS</p>
 
-        </div>    
-        
+        </div>
+
     </header>
 
     <!------------------>
@@ -70,17 +62,10 @@
 
     <main>
 
-        <div class="bodyCheckoutContainer">
-
-            <h3>Your Shopping Cart</h3>
-
-            <div class="checkout-container" id="checkout-container"></div>
-
-            <div class="checkoutBox">
-
-                <p class="totalShoppingCart">Total: $<span id="totalCostCheckout">0</span></p>
-                <a href="thank-you.html" rel="noopener noreferrer"><button id="confirmCheckout"> Confirm Checkout </button></a>
-
+        <div class="thankYouContainer">
+            
+            <div>
+                <h2>Thanks for your purchase!</h2>
             </div>
 
         </div>
@@ -92,22 +77,18 @@
         <div id="emailBox" class="emailModalBox">
 
             <div class="email-list-prompt">
-
                 <div class="promptContainer">
 
                     <h1>Welcome to My Kitchen Shop!</h1>
-                    <img id="btnCloseEmailPrompt" src="img/closeButton.png" alt="closeButton">
+                    <img id="btnCloseEmailPrompt" src="../img/closeButton.png" alt="closeButton">
                     <h3>Get 10% off your first purchase when you sign up to our mailing list!</h3>
 
                     <div class="emailInput">
-
                         <input type="email" placeholder="john.doe@email.com" class="emailPlaceholder">
                         <input type="submit" id="emailConfirmButton" class="confirmEmailButton" value="Sign Up!">
-
                     </div>
 
                 </div>
-
             </div> 
 
         </div>
@@ -115,21 +96,19 @@
         <div class="modalBox">
 
             <div class="modalShoppingCart">
-
+    
                 <h3>Shopping Cart</h3>
                 <button id="btnCloseCart"> X </button>
-
+    
                 <div id="cart-container"></div>
-
+    
                 <div class="checkOutCart">
-
                     <p class="totalShoppingCart">Total: $<span id="totalCost">0</span></p>
-                    <a href="checkout.html" rel="noopener noreferrer"><button id="proceedToCheckout"> Checkout </button></a>
-
+                    <a href="checkout.html" target="_blank" rel="noopener noreferrer"><button id="proceedToCheckout"> Checkout </button></a>
                 </div>
-
+    
             </div>
-
+    
         </div>
         
     </main>
@@ -154,7 +133,7 @@
                 <form action="" method="get">
                     <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
                     <input type="email" placeholder="Your Email" class="formInput">
-                    <button type="submit" name="submit" title="Subscribe" class="footerContactButton">Subscribe</button>
+                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" id="subscribeForm">Subscribe</button>
                 </form>
 
             </div>
@@ -163,32 +142,42 @@
 
                 <div class="footerLogo">
 
-                    <img src="img/MyKitchenBookRVB-small.png" alt="logo">
+                    <img src="../img/MyKitchenBookRVB-small.png" alt="logo">
 
                 </div>
 
                 <div class="footerSocialBar">
 
-                    <a href="https://www.facebook.com/My-Kitchen-Book-102759908776347/?ref=py_c" target="_blank" rel="noopener noreferrer"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="instagram"></a>
-                    <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="img/pinterest.png" alt="pinterest"></a>
+                    <a href="https://www.facebook.com/My-Kitchen-Book-102759908776347/?ref=py_c" target="_blank" rel="noopener noreferrer"><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="../img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="../img/pinterest.png" alt="pinterest"></a>
 
                 </div>
 
-            </div> 
+            </div>
+
+        </div>   
+        
+        <div class="modalSubscribeBox">
+            
+            <div class="modalSubscribeContainer">
+
+                <h2>Thanks for subscribing!</h2>
+                <button id="btnCloseSubscribe"> OK </button>
+
+            </div>
 
         </div>
 
-    </footer>
-
+    </footer>  
+    
     <!-------------->
     <!--JAVASCRIPT-->
     <!-------------->
     
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>    
-    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="javascript/checkout.js" type=""></script>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../javascript/thank-you.js" type=""></script>
+       
 </body>
 
 </html> 

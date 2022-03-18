@@ -4,6 +4,9 @@ const modalContainer = document.getElementsByClassName("modalBox")[0];
 const modalCart = document.getElementsByClassName("modalShoppingCart")[0];
 const sendEmailPrompt = document.getElementById("emailConfirmButton");
 const closeEmailPrompt = document.getElementById("btnCloseEmailPrompt");
+const openSubscribe = document.getElementById("subscribeForm");
+const closeSubscribe = document.getElementById("btnCloseSubscribe");
+const modalSubscribe = document.getElementsByClassName("modalSubscribeBox")[0];
 
 const recommendedProducts = document.getElementById("recommended");
 const cartContainer = document.getElementById("cart-container");
@@ -30,7 +33,7 @@ closeCart.addEventListener("click", () => { modalContainer.classList.toggle("mod
 
 modalCart.addEventListener('click',(e)=>{ e.stopPropagation() });
 
-modalContainer.addEventListener('click', () => { carritoCerrar.click() });
+modalContainer.addEventListener('click', () => { cartClosing.click() });
 
 sendEmailPrompt.addEventListener("click", () => {
 
@@ -42,6 +45,14 @@ closeEmailPrompt.addEventListener("click", () => {
 
     document.getElementById("emailBox").style.visibility = "hidden"
     localStorage.setItem("firstUser", false);
+});
+
+openSubscribe.addEventListener("click", () => { modalSubscribe.classList.toggle("modal-visible") });
+
+closeSubscribe.addEventListener("click", () => { 
+
+    modalSubscribe.classList.toggle("modal-visible");
+    location.reload();
 });
 
 

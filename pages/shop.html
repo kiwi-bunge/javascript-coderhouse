@@ -15,15 +15,11 @@
 
     <!-- STYLES IN CSS -->
     
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- TOASTIFY STYLES-->
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-
-    <!-- SWEET ALERT STYLES -->
-
-    <link rel="stylesheet" href="/node_modules/sweetalert2/dist/sweetalert2.css">
 
 </head>
 
@@ -37,15 +33,15 @@
         <nav>
             <ul class="navbar">
 
-                <a href="index.html"><img class="logo-navbar" src="img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
-                <li><a href="index.html" class="navbar_links">HOME</a></li>
+                <a href="../index.html"><img class="logo-navbar" src="../img/MyKitchenBookRVB-small.png" alt="logo-navbar"></a>
+                <li><a href="../index.html" class="navbar_links">HOME</a></li>
                 <li><a href="shop.html" class="navbar_links">SHOP</a></li>
                 <li><a href="contact.html" class="navbar_links">CONTACT</a></li>
                 <li><a href="https://mykitchenbook.net/" target="_blank" class="navbar_links">BLOG</a></li></li>
 
                 <div class="btn-navbar-right">
 
-                    <img id="btnShoppingCart" src="img/shopping-cart.png" alt="button-Shopping-Cart">
+                    <img id="btnShoppingCart" src="../img/shopping-cart.png" alt="button-Shopping-Cart">
                     <span id="cartQuantity">0</span>
 
                 </div>
@@ -123,7 +119,7 @@
                 <div class="promptContainer">
 
                     <h1>Welcome to My Kitchen Shop!</h1>
-                    <img id="btnCloseEmailPrompt" src="img/closeButton.png" alt="closeButton">
+                    <img id="btnCloseEmailPrompt" src="../img/closeButton.png" alt="closeButton">
                     <h3>Get 10% off your first purchase when you sign up to our mailing list!</h3>
 
                     <div class="emailInput">
@@ -181,7 +177,7 @@
                 <form action="" method="get">
                     <input type="text" placeholder="First Name" name="first_name" class="formInput" id="">
                     <input type="email" placeholder="Your Email" class="formInput">
-                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" onclick="subscribeContact()">Subscribe</button>
+                    <button type="button" name="submit" title="Subscribe" class="footerContactButton" id="subscribeForm">Subscribe</button>
                 </form>
 
             </div>
@@ -190,19 +186,30 @@
 
                 <div class="footerLogo">
 
-                    <img src="img/MyKitchenBookRVB-small.png" alt="logo">
+                    <img src="../img/MyKitchenBookRVB-small.png" alt="logo">
 
                 </div>
 
                 <div class="footerSocialBar">
 
-                    <a href="https://www.facebook.com/My-Kitchen-Book-102759908776347/?ref=py_c" target="_blank" rel="noopener noreferrer"><img src="img/facebook.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.png" alt="instagram"></a>
-                    <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="img/pinterest.png" alt="pinterest"></a>
+                    <a href="https://www.facebook.com/My-Kitchen-Book-102759908776347/?ref=py_c" target="_blank" rel="noopener noreferrer"><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/my.kitchenbook/" target="_blank" rel="noopener noreferrer"><img src="../img/instagram.png" alt="instagram"></a>
+                    <a href="https://www.pinterest.com.au/mykitchenbook/pins/" target="_blank" rel="noopener noreferrer"><img src="../img/pinterest.png" alt="pinterest"></a>
 
                 </div>  
 
             </div>  
+
+        </div>
+
+        <div class="modalSubscribeBox">
+            
+            <div class="modalSubscribeContainer">
+
+                <h2>Thanks for subscribing!</h2>
+                <button id="btnCloseSubscribe"> OK </button>
+
+            </div>
 
         </div>
 
@@ -213,8 +220,7 @@
     <!-------------->
  
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-    <script src="javascript/shop.js" type=""></script>
+    <script src="../javascript/shop.js" type=""></script>
 
     
 </body>
