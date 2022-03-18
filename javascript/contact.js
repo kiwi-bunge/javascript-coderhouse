@@ -277,5 +277,4 @@ function syncLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
 };
 
-// Pop up when subscribing in the footer form
 

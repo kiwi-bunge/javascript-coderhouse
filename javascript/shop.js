@@ -356,16 +356,3 @@ function cartHTML() {
 function syncLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
 };
-
-
-// Pop up when subscribing in the footer form
-
-function subscribeContact() {
-
-    Swal.fire(
-        "Thanks for subscribing!"
-      ).then(() => {
-
-        location.reload();
-      })
-};

@@ -143,41 +143,6 @@ function showRecommended() {
         })
 }
 
-// Show products in body
-
-// function showProducts() {
-
-//     fetch("javascript/products-stock-data.json")
-//         .then(response => response.json())
-//         .then(data => {
-//             console.log(data)
-        
-//             data.forEach (product => {
-                
-//                 const {id, img, name, price} = product;
-
-//                 let div = document.createElement("div");
-//                 div.classList.add("product");
-//                 div.innerHTML = `
-//                                 <div class="product-card" data-id=${id}>
-//                                     <div class="card-image">
-//                                         <img src= ${img}>
-//                                     </div>
-//                                     <p class= "card-title">
-//                                         ${name}
-//                                     </p>
-//                                     <p class= "card-price">
-//                                         $<span>${price}</span>
-//                                     </p>
-//                                     <button class="btnAddToCart" id="addToCartButton${id}" data-id="${id}"> Add to Cart </button>
-//                                 </div>
-//                 `;
-
-//                 productsContainer.appendChild(div);
-//             });
-//         });  
-// };
-
 
 // Add products to cart
 
@@ -321,17 +286,4 @@ function cartHTML() {
 
 function syncLocalStorage() {
     localStorage.setItem("cart", JSON.stringify(shoppingCart));
-};
-
-
-// Pop up when subscribing in the footer form
-
-function subscribeContact() {
-
-    Swal.fire(
-        "Thanks for subscribing!"
-      ).then(() => {
-
-        location.reload();
-      })
 };
