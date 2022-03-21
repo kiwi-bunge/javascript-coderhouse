@@ -2,7 +2,7 @@
 /* SHOP BODY */
 /*************/
 
-#shopBodyContainer {
+.shop-body-container {
     display: flex;
     margin: 50px 150px 50px 150px;
 }
@@ -10,7 +10,7 @@
 /*******************/
 /* CATEGORIES MENU */
 
-#sideBarMenu {
+.side-bar-menu {
     padding-left: 50px;
 }
 
@@ -34,6 +34,11 @@
     border: 1px solid #83472C;
     padding: 5px;
     border-radius: 5px;
+}
+
+.categoriesButtons:hover {
+    background-color: #f5e4bb;
+    color: #83472C;
 }
 
 /********************/
@@ -78,4 +83,9 @@
   border: 1px solid #83472C;
   padding: 5px;
   border-radius: 5px;
+}
+
+.btnAddToCart:hover {
+    background-color: #f5e4bb;
+    color: #83472C;
 }

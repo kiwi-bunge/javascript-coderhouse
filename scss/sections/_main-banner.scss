@@ -7,13 +7,14 @@
     position: relative;
 
     img {
-        height: 700px;
+        width: 100%;
+        height: auto;
     }
 
     button {
         position: absolute;
-        top: 520px;
-        left: 920px;
+        top: 75%;
+        left: 57%;
         background-color: #f5e4bb;
         color: #83472C;
         border-radius: 7%;

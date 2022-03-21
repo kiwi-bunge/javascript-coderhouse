@@ -1,0 +1,205 @@
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/*****************/
+/* LARGE MOBILES */
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    /* HOME SCREEN */
+
+    .bannerContainer {
+        
+        button {
+            padding: 8px;
+            font-size: 12px;
+        }
+    }
+
+    .recommendedBox {
+        .product-card {
+            margin: 0;
+            .card-image {
+                width: 150px;
+            }
+        }
+    }
+
+    /* SHOP */
+
+    .shop-body-container {
+        margin: 15px 0px 15px 0px;
+
+        .side-bar-menu {
+            padding-left: 5px;
+            h4 {
+                font-size: 20px;
+            }
+            .categoriesButtons {
+                font-size: 10px;
+            }
+        }
+
+        .products-container {
+            grid-template-columns: 1fr 1fr;
+
+            margin: 50px 0px 50px 0px;
+            padding-left: 0.5rem;
+
+            .product-card {
+                margin: 15px;
+                .card-image {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    /* MODAL SHOPPING CART */
+
+    .modalShoppingCart {
+        height: 500px;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .checkOutCart {
+            padding: 15px;
+            justify-content: space-evenly;
+            .totalShoppingCart {
+                font-size: 20px;
+            }
+
+            button {
+                font-size: 12px;
+                padding: 7px;
+            }
+        }
+    }
+
+    .cartContainer {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .productCartContainer {
+
+        margin-right: 5px;
+        p {
+            padding-right: 4px;
+            font-size: 12px;
+        }
+    }
+
+
+    /* FOOTER */
+
+    .footerContact {
+
+        padding-left: 10px;
+
+        .footerFormHeader {
+
+            h4 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .footerMenu {
+        text-align: center;
+        padding-right: 10px;
+
+        .footerLogo {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+
+
+/***********/
+/* TABLETS */
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* HOME SCREEN */
+
+    .bannerContainer {
+        
+        button {
+            padding: 8px;
+            font-size: 12px;
+        }
+    }
+
+    .recommendedBox {
+        .product-card {
+            margin: 0;
+            .card-image {
+                width: 180px;
+            }
+        }
+    }
+
+    /* SHOP */
+
+    .shop-body-container {
+        margin: 50px 0px 50px 0px;
+
+        .products-container {
+            margin: 50px 0px 50px 0px;
+            padding-left: 1rem;
+
+            .product-card {
+                margin: 15px;
+                .card-image {
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+
+
+/*****************/
+/* LARGE DEVICES */
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    
+    /* HOME SCREEN */
+
+    .bannerContainer {
+        
+        button {
+            padding: 10px;
+        }
+    }
+
+    /* SHOP */
+
+    .shop-body-container {
+        margin: 50px 0px 50px 0px;
+
+        .products-container {
+            margin: 50px 0px 50px 0px;
+            padding-left: 1rem;
+
+            .product-card {
+                margin: 15px;
+            }
+        }
+    }
+
+    .recommendedBox {
+        .product-card {
+            margin: 15px;
+        }
+    }
+}

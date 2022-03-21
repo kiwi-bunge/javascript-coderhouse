@@ -66,11 +66,16 @@
     width: 250px;
     padding: 10px;
 }
-.confirmEmailButton{
+.confirmEmailButton {
     background-color: #83472C;
     color: #f5e4bb;
     padding: 10px;
     border: transparent;
+}
+
+.confirmEmailButton:hover {
+    background-color: #f5e4bb;
+    color: #83472C;
 }
 
 .email-prompt-hidden {
@@ -128,21 +133,21 @@
     font-weight: bold;
 }
 
-#cart-container {
+.cartContainer {
     max-height: 350px;
     overflow-y: scroll;
     width: 80%;
     padding-right: 80px;
 }
 
-#cart-container::-webkit-scrollbar {
+.cartContainer::-webkit-scrollbar {
     background: white;
     border-radius: 10px; 
     border-color: #83472C;
     width: 7px; 
 }
 
-#cart-container::-webkit-scrollbar-thumb {
+.cartContainer::-webkit-scrollbar-thumb {
     background: #83472C;
     border-radius: 10px; 
 }
